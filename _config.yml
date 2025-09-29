@@ -1,0 +1,4 @@
+# 최소한의 Jekyll 설정
+title: 강화도 당일 여행 계획
+description: 부모님과 함께하는 강화도 여행 일정
+remote_theme: jekyll/minima
