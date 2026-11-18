@@ -1,0 +1,1545 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>2026 도쿄 3박 4일 가족 여행 가이드북 (11.19 ~ 11.22)</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Fonts: Inter & Noto Sans KR -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+KR:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Noto Sans KR"', 'Inter', 'sans-serif'],
+          },
+          colors: {
+            tokyoNavy: '#0f172a',
+            autumnAmber: '#d97706',
+            autumnCoral: '#e11d48',
+          }
+        }
+      }
+    };
+  </script>
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      background-color: #f8fafc;
+      color: #1e293b;
+      word-break: keep-all;
+    }
+    /* 커스텀 스크롤바 */
+    ::-webkit-scrollbar {
+      width: 8px;
+      height: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #f1f5f9;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #cbd5e1;
+      border-radius: 9999px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #94a3b8;
+    }
+    /* 타임라인 세로선 */
+    .timeline-line::before {
+      content: '';
+      position: absolute;
+      top: 1.5rem;
+      bottom: 0;
+      left: 0.95rem;
+      width: 2px;
+      background-color: #e2e8f0;
+    }
+    .timeline-item:last-child .timeline-line::before {
+      display: none;
+    }
+    /* 체크박스 완료 스타일 */
+    .check-done {
+      text-decoration: line-through;
+      color: #94a3b8;
+    }
+    /* 인쇄용 스타일 */
+    @media print {
+      .no-print {
+        display: none !important;
+      }
+      .day-panel {
+        display: block !important;
+        page-break-inside: avoid;
+        margin-bottom: 2rem;
+      }
+    }
+  </style>
+</head>
+<body class="antialiased selection:bg-amber-100 selection:text-amber-900">
+
+  <!-- =====================================================================
+       [GitHub Pages 배포 안내]
+       이 파일을 GitHub 저장소(Repository) 루트에 'index.html' 이름으로 업로드한 뒤,
+       Settings > Pages > Branch를 'main' / '/(root)'로 설정하면 즉시 웹페이지로 배포됩니다.
+       ===================================================================== -->
+
+  <!-- 상단 히어로 배너 -->
+  <header class="relative overflow-hidden bg-gradient-to-br from-slate-900 via-slate-800 to-indigo-950 text-white">
+    <div class="absolute inset-0 opacity-20 bg-[radial-gradient(#f59e0b_1px,transparent_1px)] [background-size:20px_20px]"></div>
+    <div class="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-14">
+      <div class="flex flex-wrap items-center gap-2 mb-4">
+        <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-amber-500/20 text-amber-300 border border-amber-400/30">
+          <i class="fa-solid fa-leaf"></i> 11월 가을 단풍 & 야경 시즌
+        </span>
+        <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-rose-500/20 text-rose-300 border border-rose-400/30">
+          <i class="fa-solid fa-sparkles"></i> 원신 · 프로세카 · 밀그램 성지순례
+        </span>
+      </div>
+
+      <h1 class="text-2xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight leading-tight mb-3">
+        2026 도쿄 3박 4일 가족 여행 가이드북
+      </h1>
+      <p class="text-slate-300 text-sm sm:text-base max-w-2xl mb-8">
+        2026년 11월 19일(목) ~ 11월 22일(일) · 어른 2명 & 학생 1명 맞춤형 완전 정복 가이드
+      </p>
+
+      <!-- 핵심 요약 4대 카드 -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4">
+        <div class="bg-white/10 backdrop-blur-md border border-white/15 rounded-2xl p-4">
+          <div class="flex items-center gap-2.5 text-amber-300 text-xs font-bold uppercase tracking-wider mb-1">
+            <i class="fa-solid fa-users"></i> 여행 인원
+          </div>
+          <div class="text-lg font-bold text-white">어른 2명 + 학생 1명</div>
+          <div class="text-xs text-slate-300 mt-1">가족 맞춤형 여유 동선 & 취향 반영</div>
+        </div>
+
+        <div class="bg-white/10 backdrop-blur-md border border-white/15 rounded-2xl p-4">
+          <div class="flex items-center gap-2.5 text-sky-300 text-xs font-bold uppercase tracking-wider mb-1">
+            <i class="fa-solid fa-hotel"></i> 베이스캠프 숙소
+          </div>
+          <div class="text-lg font-bold text-white">이케부쿠로역 인근</div>
+          <div class="text-xs text-slate-300 mt-1">JR 야마노테선 · 굿즈 성지 도보권</div>
+        </div>
+
+        <div class="bg-white/10 backdrop-blur-md border border-white/15 rounded-2xl p-4">
+          <div class="flex items-center gap-2.5 text-emerald-300 text-xs font-bold uppercase tracking-wider mb-1">
+            <i class="fa-solid fa-plane-arrival"></i> 항공 스케줄 (나리타)
+          </div>
+          <div class="text-sm font-bold text-white">입국: 11/19(목) 11:50 도착</div>
+          <div class="text-sm font-bold text-white">출국: 11/22(일) 13:00 출발</div>
+        </div>
+
+        <div class="bg-white/10 backdrop-blur-md border border-white/15 rounded-2xl p-4">
+          <div class="flex items-center gap-2.5 text-rose-300 text-xs font-bold uppercase tracking-wider mb-1">
+            <i class="fa-solid fa-map-location-dot"></i> 핵심 테마
+          </div>
+          <div class="text-sm font-bold text-white leading-snug">이케부쿠로 애니 굿즈 탐방<br/>근교 버스투어 · 신사 & 도쿄역 야경</div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- 상단 스티키 네비게이션 -->
+  <nav class="sticky top-0 z-40 bg-white/90 backdrop-blur-md border-b border-slate-200 shadow-sm no-print">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-14 overflow-x-auto gap-2">
+        <div class="flex items-center space-x-1 sm:space-x-2">
+          <a href="#section-common" class="px-3 py-2 rounded-xl text-xs sm:text-sm font-semibold text-slate-700 hover:bg-slate-100 hover:text-slate-900 whitespace-nowrap transition">
+            <i class="fa-solid fa-compass text-amber-600 mr-1"></i>여행 공통 필수 가이드
+          </a>
+          <a href="#section-itinerary" class="px-3 py-2 rounded-xl text-xs sm:text-sm font-semibold text-slate-700 hover:bg-slate-100 hover:text-slate-900 whitespace-nowrap transition">
+            <i class="fa-solid fa-calendar-days text-rose-600 mr-1"></i>일자별 상세 일정
+          </a>
+          <a href="#section-suburbs" class="px-3 py-2 rounded-xl text-xs sm:text-sm font-semibold text-slate-700 hover:bg-slate-100 hover:text-slate-900 whitespace-nowrap transition">
+            <i class="fa-solid fa-mountain-sun text-emerald-600 mr-1"></i>11월 근교 투어 비교
+          </a>
+          <a href="#section-checklist" class="px-3 py-2 rounded-xl text-xs sm:text-sm font-semibold text-slate-700 hover:bg-slate-100 hover:text-slate-900 whitespace-nowrap transition">
+            <i class="fa-solid fa-list-check text-indigo-600 mr-1"></i>예약 & 준비 체크리스트
+          </a>
+          <a href="#section-packing" class="px-3 py-2 rounded-xl text-xs sm:text-sm font-semibold text-slate-700 hover:bg-slate-100 hover:text-slate-900 whitespace-nowrap transition">
+            <i class="fa-solid fa-suitcase-rolling text-teal-600 mr-1"></i>준비물 & 캐리어 팁
+          </a>
+          <a href="#section-weather" class="px-3 py-2 rounded-xl text-xs sm:text-sm font-semibold text-slate-700 hover:bg-slate-100 hover:text-slate-900 whitespace-nowrap transition">
+            <i class="fa-solid fa-cloud-sun text-sky-600 mr-1"></i>날짜별 날씨
+          </a>
+        </div>
+        <button onclick="window.print()" class="hidden md:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-semibold bg-slate-900 text-white hover:bg-slate-700 transition">
+          <i class="fa-solid fa-print"></i> 인쇄 / PDF 저장
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 space-y-14">
+
+    <!-- =====================================================================
+         섹션 1: 여행 내 공통 항목 (Essential Travel Guide)
+         ===================================================================== -->
+    <section id="section-common" class="scroll-mt-20">
+      <div class="flex flex-col sm:flex-row sm:items-end justify-between mb-6 gap-2">
+        <div>
+          <span class="text-xs font-bold uppercase tracking-wider text-amber-600">Essential Travel Guide</span>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 mt-1">1. 여행 공통 필수 가이드</h2>
+        </div>
+        <p class="text-sm text-slate-500">공항 이동부터 교통카드, 현지 결제 및 현금 운용까지 출발 전 꼭 숙지할 핵심 정보</p>
+      </div>
+
+      <!-- 1-1. 나리타공항 ↔ 이케부쿠로 이동 방법 비교 -->
+      <div class="bg-white rounded-3xl border border-slate-200 shadow-sm p-5 sm:p-7 mb-6">
+        <div class="flex items-center gap-2.5 mb-4">
+          <div class="w-9 h-9 rounded-xl bg-sky-100 text-sky-700 flex items-center justify-center font-bold">
+            <i class="fa-solid fa-train-subway"></i>
+          </div>
+          <div>
+            <h3 class="text-lg sm:text-xl font-bold text-slate-900">나리타 국제공항 ↔ 이케부쿠로 이동 방법 비교</h3>
+            <p class="text-xs sm:text-sm text-slate-500">입국 시(11:50 도착)와 출국 시(13:00 출발) 상황에 맞춰 최적의 교통편을 선택하세요.</p>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-5">
+          <!-- 기차 옵션 -->
+          <div class="rounded-2xl border-2 border-sky-200 bg-sky-50/40 p-5 relative">
+            <span class="inline-block px-2.5 py-1 rounded-lg text-xs font-bold bg-sky-600 text-white mb-3">
+              속도 · 정시성 최고 (귀국일 강력 추천)
+            </span>
+            <h4 class="text-lg font-bold text-slate-900 mb-2">① 기차: 게이세이 스카이라이너 + JR 야마노테선</h4>
+            <ul class="space-y-2 text-sm text-slate-700">
+              <li class="flex items-start gap-2">
+                <i class="fa-solid fa-route text-sky-600 mt-1"></i>
+                <span><strong>경로:</strong> 나리타공항역 → (스카이라이너 약 36분) → <strong>닛포리역</strong> 하차 후 JR 야마노테선 환승 → 이케부쿠로역(약 13분)</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <i class="fa-solid fa-clock text-sky-600 mt-1"></i>
+                <span><strong>소요 시간:</strong> 총 약 55분 ~ 1시간 (도로 정체 없음)</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <i class="fa-solid fa-yen-sign text-sky-600 mt-1"></i>
+                <span><strong>요금:</strong> 성인 편도 약 2,750엔 <span class="text-sky-700 font-semibold">(온라인 사전 예매 할인 시 약 2,490엔)</span></span>
+              </li>
+              <li class="flex items-start gap-2">
+                <i class="fa-solid fa-circle-check text-sky-600 mt-1"></i>
+                <span>
+                  <strong>특징 및 닛포리역 상세 환승법:</strong> 닛포리역 환승 동선이 짧고 엘리베이터가 잘 되어 있어 캐리어 이동이 수월합니다. 특히 <strong>4일차 13:00 비행기 출국 시</strong> 정시성이 보장되는 스카이라이너 이용을 강력히 권장합니다.
+                  <div class="mt-2 p-3 rounded-xl bg-white/90 border border-sky-200 text-xs text-slate-700 space-y-1.5 leading-relaxed">
+                    <div class="font-bold text-sky-900"><i class="fa-solid fa-signs-post mr-1"></i>닛포리역(Nippori) 초간단 환승 가이드</div>
+                    <p>1️⃣ <strong>환승 표지판 따라 이동:</strong> 스카이라이너 하차 후 승강장에서 위로 올라가 <strong>'JR선 환승(JR Line Transfer / JR線のりかえ)'</strong> 파란색 안내 표지판을 따라 직진합니다(역사 밖으로 나갈 필요 없음).</p>
+                    <p>2️⃣ <strong>전용 환승 개찰구 통과:</strong> 바로 나타나는 <strong>JR 환승 전용 개찰구</strong>에서 ① 먼저 스카이라이너 종이 승차권을 개찰구에 투입(또는 QR 스캔)하고, ② 이어서 단말기에 <strong>스이카/파스모(또는 애플월렛)</strong>를 태그하면 한 번에 통과됩니다.</p>
+                    <p>3️⃣ <strong>야마노테선 승강장 하차:</strong> 개찰구 통과 후 <strong>'JR 야마노테선(이케부쿠로·신주쿠 방면 / 외선순환)'</strong> 안내를 따라 엘리베이터 또는 에스컬레이터로 내려가 탑승합니다. 승강장마다 대형 엘리베이터가 연결되어 있어 캐리어를 끌고도 매우 편리합니다.</p>
+                  </div>
+                  <div class="mt-2 p-3 rounded-xl bg-white/90 border border-sky-200 text-xs text-slate-700 space-y-1.5 leading-relaxed">
+                    <div class="font-bold text-sky-900"><i class="fa-solid fa-ticket mr-1"></i>스카이라이너 기차표 구매(및 온라인 예매 QR 교환) 상세 위치</div>
+                    <p>• <strong>[입국 시: 나리타공항 → 도쿄 시내]</strong> 제1·제2·3터미널 모두 입국장을 나온 뒤 에스컬레이터/엘리베이터를 타고 <strong>지하 1층(B1F) '철도(Railways)' 층</strong>으로 내려갑니다. 파란색 <strong>'게이세이선(Keisei Line)'</strong> 안내 표지판을 따라가면 개찰구 바로 맞은편에 <strong>'SKYLINER &amp; KEISEI INFORMATION CENTER(유인 매표소/외국인 전용 창구)'</strong>와 <strong>'스카이라이너 전용 자동발권기(파란색)'</strong>가 있습니다. 온라인 예매 바우처 QR코드를 이 창구 또는 QR 리더기가 달린 전용 발권기에서 실물 지정석 티켓으로 교환한 뒤 파란색 개찰구로 입장합니다.</p>
+                    <p class="pt-1.5 border-t border-sky-100">• <strong>[귀국 시: 닛포리역 → 나리타공항]</strong> JR 야마노테선 하차 후 <strong>'게이세이선 환승(Keisei Line Transfer)'</strong> 표지판을 따라 위로 올라오면, <strong>환승 개찰구 바로 옆에 파란색 게이세이 라이너 티켓 유인 창구와 다국어(한국어 지원) 스카이라이너 전용 자동발권기</strong>가 나란히 위치해 있습니다. 현장 발권기에서 당일 직전 열차 지정석 티켓을 바로 구매하거나, 미리 예매한 왕복권/바우처 QR코드를 창구 또는 전용 발권기에서 실물 지정석 티켓으로 교환한 뒤, <strong>교통카드(스이카/파스모)와 스카이라이너 티켓을 함께 사용하여</strong> 개찰구를 통과합니다.</p>
+                  </div>
+                </span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- 공항버스 옵션 -->
+          <div class="rounded-2xl border border-slate-200 bg-slate-50/70 p-5">
+            <span class="inline-block px-2.5 py-1 rounded-lg text-xs font-bold bg-amber-600 text-white mb-3">
+              환승 없음 · 편의성 최고 (입국 첫날 추천)
+            </span>
+            <h4 class="text-lg font-bold text-slate-900 mb-2">② 공항버스: 리무진버스 또는 저가 고속버스(LCB)</h4>
+            <ul class="space-y-2 text-sm text-slate-700">
+              <li class="flex items-start gap-2">
+                <i class="fa-solid fa-bus text-amber-600 mt-1"></i>
+                <span><strong>경로:</strong> 나리타공항 각 터미널 버스 승강장 → 이케부쿠로 선샤인 버스터미널 / 이케부쿠로역 서쪽 출구 직행</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <i class="fa-solid fa-clock text-amber-600 mt-1"></i>
+                <span><strong>소요 시간:</strong> 약 85 ~ 115분 (도로 교통 상황에 따라 변동)</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <i class="fa-solid fa-yen-sign text-amber-600 mt-1"></i>
+                <span><strong>요금:</strong>
+                  <br/>• <strong>도쿄공항교통 리무진버스:</strong> 성인 편도 3,600엔 (선샤인시티·주요 호텔 앞 정차)
+                  <br/>• <strong>윌러(WILLER) 저가 공항버스(LCB):</strong> 성인 편도 2,300엔 <span class="text-amber-700 font-semibold">(24시간 전 온라인 조기 예약 시 1,900엔, 서쪽 출구 정차)</span>
+                </span>
+              </li>
+              <li class="flex items-start gap-2">
+                <i class="fa-solid fa-circle-check text-amber-600 mt-1"></i>
+                <span>
+                  <strong>특징:</strong> 짐을 버스 짐칸에 싣고 환승 없이 한 번에 이동해 입국 첫날 체력을 아끼기에 좋습니다. (11:50 도착 후 수속 시 오후 1~2시경 버스 탑승 가능)
+                  <div class="mt-2 p-3 rounded-xl bg-white/90 border border-amber-200 text-xs text-slate-700 space-y-1.5 leading-relaxed">
+                    <div class="font-bold text-amber-900"><i class="fa-solid fa-location-dot mr-1"></i>공항버스 티켓 구매 및 탑승 상세 위치</div>
+                    <p>• <strong>[입국 시: 나리타공항 → 이케부쿠로]</strong> 입국 수속 후 세관을 통과해 <strong>1층 입국 로비(Arrival Lobby)</strong>로 나오자마자 정면 또는 출구 인근에 위치한 주황색/파란색 <strong>'버스 승차권 카운터(Bus Ticket Counter / Limousine Bus Counter)'</strong>에서 목적지(<strong>'이케부쿠로 / Ikebukuro'</strong>)를 말하고 현장 발권합니다. <span class="text-slate-500">(제1터미널: 1층 도착 로비 중앙·남윙·북윙 / 제2터미널: 1층 도착 로비 A·B 구역 정면 / 제3터미널: 2층 본관 연결 통로 앞)</span> 온라인 사전 예약(WILLER LCB 등) 시에는 별도 발권 없이 탑승 10분 전까지 바우처에 안내된 지정 승강장(제1터미널 1층 7번, 제2터미널 1층 14번, 제3터미널 1층 6번 등)으로 바로 이동해 기사님께 모바일 QR 화면을 보여주고 탑승합니다.</p>
+                    <p class="pt-1.5 border-t border-amber-100">• <strong>[귀국 시: 이케부쿠로 → 나리타공항 탑승 및 발권 위치]</strong><br/>
+                    <strong>① 도쿄공항교통 리무진버스:</strong> 이케부쿠로역 동쪽 출구 방면 <strong>선샤인시티 프린스호텔 1층 로비 버스 승강장</strong> 또는 <strong>선샤인 버스터미널(문화회관 1층)</strong>, 서쪽 출구 방면 <strong>호텔 메트로폴리탄 1층 정면 현관 앞</strong>에서 탑승합니다. 티켓은 각 호텔 프런트·벨데스크(사전 예약제), 선샤인 버스터미널 내 자동발권기 및 안내 카운터에서 구매 가능하며, 공석이 있을 경우 탑승 시 교통카드(스이카/파스모) 태그로도 결제할 수 있습니다.<br/>
+                    <strong>② 윌러(WILLER) 저가 공항버스(LCB):</strong> <strong>이케부쿠로역 서쪽 출구(니시구치) 도보 3분 거리 '이케부쿠로역 서쪽 출구 버스 정류장'(도부백화점/도쿄예술극장 방면 큰길가)</strong>에서 탑승합니다. 버스 정류장 현장 매표소가 없으므로 반드시 출발 전 온라인(WILLER 공식 사이트/앱)으로 사전 예약 후 모바일 탑승권을 제시해야 합니다.</p>
+                  </div>
+                </span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- 공항버스 옵션 -->
+          <div class="rounded-2xl border border-slate-200 bg-slate-50/70 p-5">
+            <span class="inline-block px-2.5 py-1 rounded-lg text-xs font-bold bg-amber-600 text-white mb-3">
+              환승 없음 · 편의성 최고 (입국 첫날 추천)
+            </span>
+            <h4 class="text-lg font-bold text-slate-900 mb-2">② 공항버스: 리무진버스 또는 저가 고속버스(LCB)</h4>
+            <ul class="space-y-2 text-sm text-slate-700">
+              <li class="flex items-start gap-2">
+                <i class="fa-solid fa-bus text-amber-600 mt-1"></i>
+                <span><strong>경로:</strong> 나리타공항 각 터미널 버스 승강장 → 이케부쿠로 선샤인 버스터미널 / 이케부쿠로역 서쪽 출구 직행</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <i class="fa-solid fa-clock text-amber-600 mt-1"></i>
+                <span><strong>소요 시간:</strong> 약 85 ~ 115분 (도로 교통 상황에 따라 변동)</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <i class="fa-solid fa-yen-sign text-amber-600 mt-1"></i>
+                <span><strong>요금:</strong>
+                  <br/>• <strong>도쿄공항교통 리무진버스:</strong> 성인 편도 3,600엔 (선샤인시티·주요 호텔 앞 정차)
+                  <br/>• <strong>윌러(WILLER) 저가 공항버스(LCB):</strong> 성인 편도 2,300엔 <span class="text-amber-700 font-semibold">(24시간 전 온라인 조기 예약 시 1,900엔, 서쪽 출구 정차)</span>
+                </span>
+              </li>
+              <li class="flex items-start gap-2">
+                <i class="fa-solid fa-circle-check text-amber-600 mt-1"></i>
+                <span>
+                  <strong>특징:</strong> 짐을 버스 짐칸에 싣고 환승 없이 한 번에 이동해 입국 첫날 체력을 아끼기에 좋습니다. (11:50 도착 후 수속 시 오후 1~2시경 버스 탑승 가능)
+                  <div class="mt-2 p-3 rounded-xl bg-white/90 border border-amber-200 text-xs text-slate-700 space-y-1.5 leading-relaxed">
+                    <div class="font-bold text-amber-900"><i class="fa-solid fa-location-dot mr-1"></i>공항버스 티켓 구매 상세 위치</div>
+                    <p>• <strong>현장 발권(리무진버스 등):</strong> 입국 수속 후 세관을 통과해 <strong>1층 입국 로비(Arrival Lobby)</strong>로 나오자마자 정면 또는 출구 인근에 위치한 주황색/파란색 <strong>'버스 승차권 카운터(Bus Ticket Counter / Limousine Bus Counter)'</strong>에서 목적지(<strong>'이케부쿠로 / Ikebukuro'</strong>)를 말하고 현장 발권합니다.<br/>
+                    <span class="text-slate-500">(제1터미널: 1층 도착 로비 중앙·남윙·북윙 각 구역 / 제2터미널: 1층 도착 로비 A·B 구역 정면 / 제3터미널: 2층 본관 연결 통로 앞)</span></p>
+                    <p>• <strong>온라인 사전 예약(WILLER LCB 등):</strong> 저가 고속버스를 온라인으로 사전 예약한 경우 별도 종이 티켓 발권 없이 <strong>탑승 시간 10분 전까지 지정된 정류장</strong>(제1터미널 1층 7번 승강장, 제2터미널 1층 14번 승강장, 제3터미널 1층 6번 승강장 등 바우처 안내 번호 확인)으로 바로 이동해 기사님께 모바일 예약 화면(QR)을 보여주고 탑승하면 됩니다.</p>
+                  </div>
+                </span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- 1-2. 교통카드(스이카/파스모) & 현지 결제·현금 가이드 (2열 그리드) -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+        <!-- 교통카드 & 트래블로그 연동 안내 -->
+        <div class="bg-white rounded-3xl border border-slate-200 shadow-sm p-5 sm:p-7 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center gap-2.5 mb-4">
+              <div class="w-9 h-9 rounded-xl bg-emerald-100 text-emerald-700 flex items-center justify-center font-bold">
+                <i class="fa-solid fa-id-card"></i>
+              </div>
+              <div>
+                <h3 class="text-lg font-bold text-slate-900">스이카(Suica) · 파스모(PASMO) 발급법</h3>
+                <p class="text-xs text-slate-500">도쿄 내 사용처·요금·혜택 100% 동일</p>
+              </div>
+            </div>
+
+            <!-- 중요 경고 박스 -->
+            <div class="p-3.5 rounded-2xl bg-rose-50 border border-rose-200 text-xs sm:text-sm text-rose-900 mb-4">
+              <div class="font-bold flex items-center gap-1.5 mb-1">
+                <i class="fa-solid fa-triangle-exclamation text-rose-600"></i> 트래블로그 실물 카드 직접 태그 불가!
+              </div>
+              <p class="text-rose-800 leading-relaxed">
+                JR 동일본·도쿄 메트로·도에이 지하철 개찰구는 일본 현지 교통 IC카드(FeliCa) 전용입니다. 트래블로그 실물 카드로는 일반 개찰구 통과가 불가하므로 반드시 스이카/파스모를 준비하세요. (세븐뱅크 ATM에서 트래블로그 카드로 <strong>수수료 없이 엔화 출금</strong> 후 충전 가능)
+              </p>
+            </div>
+
+            <div class="space-y-3 text-sm text-slate-700">
+              <div class="p-3.5 rounded-2xl bg-slate-50 border border-slate-200">
+                <div class="font-bold text-slate-900 mb-1"><i class="fa-brands fa-apple mr-1.5 text-slate-800"></i>아이폰(iOS) 사용자: 애플월렛 모바일 발급 (추천)</div>
+                <p class="text-xs text-slate-600 leading-relaxed">
+                  한국에서 미리 발급 가능! <strong>지갑(Wallet) 앱 → '+' → 교통 카드 → 일본(Japan) → Suica 또는 PASMO</strong> 선택 후 트래블로그·현대카드 등 애플페이 등록 카드로 최소 1,000엔부터 충전. 현지에서 화면을 켜지 않고 상단 뒷면을 그대로 태그합니다.
+                </p>
+              </div>
+
+              <div class="p-3.5 rounded-2xl bg-slate-50 border border-slate-200">
+                <div class="font-bold text-slate-900 mb-1"><i class="fa-brands fa-android mr-1.5 text-emerald-600"></i>안드로이드 & 실물 카드 희망자: 공항 현장 구매</div>
+                <p class="text-xs text-slate-600 leading-relaxed">
+                  나리타공항 제1·2터미널 지하 1층 <strong>JR 여행 서비스 센터</strong>, <strong>게이세이선 매표소</strong>, 또는 역 내 다기능 발매기(나리타공항 제1터미널 지하 1층 JR 개찰구 옆(스타벅스 맞은편 붉은색 전용 머신))에서 구매.<br/>
+                  • <strong>웰컴 스이카 / 파스모 패스포트:</strong> 보증금(500엔) 없음, 28일 유효, 잔액 환불 불가(마지막 날 편의점·면세점에서 소진).<br/>
+                  • <strong>일반 무기명 스이카/파스모:</strong> 보증금 500엔 포함, 유효기간 10년.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-4 pt-4 border-t border-slate-100 grid grid-cols-2 gap-3 text-xs">
+            <div class="bg-amber-50/80 p-3 rounded-xl border border-amber-200/70">
+              <span class="font-bold text-amber-900 block mb-0.5">🎓 학생 요금 기준</span>
+              <span class="text-amber-800">초등학생(만 6~11세)만 50% 어린이 요금 적용(여권 지참 창구 발급). <strong>중학생 이상(만 12세~)은 성인 요금</strong> 적용!</span>
+            </div>
+            <div class="bg-sky-50/80 p-3 rounded-xl border border-sky-200/70">
+              <span class="font-bold text-sky-900 block mb-0.5">💴 권장 초기 충전금</span>
+              <span class="text-sky-800">3박 4일 시내 이동 위주 <strong>1인 2,500~3,000엔</strong> (편의점·자판기 결제 포함 시 3,000~4,000엔 권장)</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 현지 결제 & 현금 운용 가이드 -->
+        <div class="bg-white rounded-3xl border border-slate-200 shadow-sm p-5 sm:p-7 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center gap-2.5 mb-4">
+              <div class="w-9 h-9 rounded-xl bg-indigo-100 text-indigo-700 flex items-center justify-center font-bold">
+                <i class="fa-solid fa-credit-card"></i>
+              </div>
+              <div>
+                <h3 class="text-lg font-bold text-slate-900">현지 결제 수단 & 현금 준비 가이드</h3>
+                <p class="text-xs text-slate-500">트래블로그 카드 + 네이버페이 + 비상 현금 최적 조합</p>
+              </div>
+            </div>
+
+            <div class="space-y-3 text-sm text-slate-700 mb-4">
+              <div class="p-3.5 rounded-2xl bg-indigo-50/50 border border-indigo-100">
+                <div class="flex items-center justify-between mb-1">
+                  <span class="font-bold text-indigo-950">💳 주력 결제: 트래블로그 실물 카드</span>
+                  <span class="text-[11px] font-bold px-2 py-0.5 rounded bg-indigo-600 text-white">가맹점 95% 이상</span>
+                </div>
+                <p class="text-xs text-slate-700 leading-relaxed">
+                  애니메이트, K-BOOKS, 파르코, 선샤인시티, 돈키호테, 편의점, 일반 식당 대부분 터치(컨택리스) 또는 IC칩 결제가 가능합니다.<br/>
+                  <strong class="text-rose-600">※ 주의:</strong> 단말기 통화 선택 화면이 뜨면 이중 수수료 방지를 위해 <strong>반드시 현지 통화인 'JPY(엔화)'</strong>를 선택하세요!
+                </p>
+              </div>
+
+              <div class="p-3.5 rounded-2xl bg-emerald-50/50 border border-emerald-100">
+                <div class="flex items-center justify-between mb-1">
+                  <span class="font-bold text-emerald-950">📱 보조 결제: 네이버페이 QR 현장결제</span>
+                  <span class="text-[11px] font-bold px-2 py-0.5 rounded bg-emerald-600 text-white">Alipay+ / PayPay</span>
+                </div>
+                <p class="text-xs text-slate-700 leading-relaxed">
+                  일본 내 <strong>Alipay+(알리페이플러스)</strong> 및 <strong>PayPay(페이페이)</strong> 로고가 있는 편의점, 드럭스토어(돈키호테·마츠모토키요시), 백화점, 프랜차이즈 식당에서 스마트폰 QR로 간편 결제 및 포인트 혜택을 받을 수 있습니다.
+                </p>
+              </div>
+
+              <div class="p-3.5 rounded-2xl bg-amber-50/60 border border-amber-200/80">
+                <div class="font-bold text-amber-950 mb-1.5">💴 예외적으로 '엔화 현금'이 꼭 필요한 곳</div>
+                <ul class="text-xs text-amber-900 space-y-1 list-disc list-inside">
+                  <li><strong>전통 상점가 & 신사:</strong> 아사쿠사 나카미세 도리 길거리 간식, 신사 오미쿠지·부적</li>
+                  <li><strong>로컬 맛집 식권 자판기:</strong> 무테키야 등 일부 전통 라멘집·규동집의 현금 전용 식권기</li>
+                  <li><strong>가챠(캡슐토이) & 오락실:</strong> 애니메이트·선샤인시티 내 가챠 기계 (100엔 동전 필수)</li>
+                  <li><strong>실물 교통카드 충전:</strong> 역 발매기·편의점에서 실물 스이카/파스모 충전 시 현금만 가능</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="p-3.5 rounded-2xl bg-slate-900 text-white flex items-center justify-between">
+            <div>
+              <div class="text-xs text-slate-400">3인 가족 3박 4일 권장 환전액</div>
+              <div class="text-base sm:text-lg font-extrabold text-amber-400">약 15,000 ~ 20,000엔 현금</div>
+            </div>
+            <div class="text-right text-xs text-slate-300">
+              부족 시 편의점(세븐뱅크) ATM에서<br/>트래블로그로 무료 추가 출금
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================================
+         섹션 2: 일자별 상세 일정 & 동선 (Day 1 ~ Day 4)
+         ===================================================================== -->
+    <section id="section-itinerary" class="scroll-mt-20">
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-6 gap-4">
+        <div>
+          <span class="text-xs font-bold uppercase tracking-wider text-rose-600">Day-by-Day Itinerary</span>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 mt-1">2. 일자별 상세 동선 & 추천 맛집</h2>
+        </div>
+
+        <!-- 일자 선택 탭 버튼 -->
+        <div class="inline-flex flex-wrap gap-1.5 bg-slate-200/80 p-1.5 rounded-2xl no-print" role="tablist">
+          <button onclick="filterDay('all')" id="tab-all" class="day-tab-btn px-3.5 py-2 rounded-xl text-xs sm:text-sm font-bold bg-slate-900 text-white shadow-sm transition">
+            전체 일정 보기
+          </button>
+          <button onclick="filterDay('day1')" id="tab-day1" class="day-tab-btn px-3.5 py-2 rounded-xl text-xs sm:text-sm font-bold text-slate-700 hover:bg-white/70 transition">
+            1일차 (11/19 목)
+          </button>
+          <button onclick="filterDay('day2')" id="tab-day2" class="day-tab-btn px-3.5 py-2 rounded-xl text-xs sm:text-sm font-bold text-slate-700 hover:bg-white/70 transition">
+            2일차 (11/20 금)
+          </button>
+          <button onclick="filterDay('day3')" id="tab-day3" class="day-tab-btn px-3.5 py-2 rounded-xl text-xs sm:text-sm font-bold text-slate-700 hover:bg-white/70 transition">
+            3일차 (11/21 토)
+          </button>
+          <button onclick="filterDay('day4')" id="tab-day4" class="day-tab-btn px-3.5 py-2 rounded-xl text-xs sm:text-sm font-bold text-slate-700 hover:bg-white/70 transition">
+            4일차 (11/22 일)
+          </button>
+        </div>
+      </div>
+
+      <div class="space-y-8">
+
+        <!-- ==================== DAY 1 ==================== -->
+        <article id="panel-day1" class="day-panel bg-white rounded-3xl border border-slate-200 shadow-sm overflow-hidden">
+          <div class="bg-gradient-to-r from-rose-600 to-amber-600 px-6 py-5 text-white flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+            <div>
+              <span class="text-xs font-bold uppercase tracking-widest text-rose-100">DAY 01 · 11월 19일 (목)</span>
+              <h3 class="text-xl sm:text-2xl font-extrabold mt-0.5">도쿄 도착 & 이케부쿠로 애니 굿즈 성지순례</h3>
+            </div>
+            <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-black/20 text-xs font-semibold w-fit">
+              <i class="fa-solid fa-wand-magic-sparkles"></i> 원신 · 프로세카 · 밀그램 집중 공략
+            </span>
+          </div>
+
+          <div class="p-5 sm:p-7 space-y-6">
+            <!-- 타임라인 -->
+            <div class="space-y-5">
+              <div class="timeline-item relative pl-9">
+                <div class="timeline-line"></div>
+                <div class="absolute left-0 top-1 w-8 h-8 rounded-full bg-slate-900 text-white text-xs font-bold flex items-center justify-center">1</div>
+                <div class="text-xs font-bold text-amber-600">11:50 ~ 14:30</div>
+                <h4 class="text-base font-bold text-slate-900">나리타공항 도착 · 입국 수속 및 이케부쿠로 숙소 이동</h4>
+                <p class="text-sm text-slate-600 mt-1">
+                  Visit Japan Web QR코드로 입국 심사 통과 후, 스카이라이너(닛포리 환승, 약 1시간) 또는 리무진/WILLER 직행버스(약 90~110분)로 이케부쿠로역 이동. 숙소 체크인 또는 짐 보관 후 가볍게 출발합니다.
+                </p>
+              </div>
+
+              <div class="timeline-item relative pl-9">
+                <div class="timeline-line"></div>
+                <div class="absolute left-0 top-1 w-8 h-8 rounded-full bg-rose-600 text-white text-xs font-bold flex items-center justify-center">2</div>
+                <div class="text-xs font-bold text-rose-600">15:00 ~ 18:30 (핵심 도보 순환 코스)</div>
+                <h4 class="text-base font-bold text-slate-900">선호 작품별(원신 · 프로세카 · 밀그램) 이케부쿠로 굿즈 탐방</h4>
+                <p class="text-sm text-slate-600 mt-1 mb-4">
+                  이케부쿠로역 동쪽 출구에서 시작해 오토메 로드를 거쳐 선샤인시티까지 발품을 최소화하는 원형 순환 동선입니다.
+                </p>
+
+                <!-- 작품별 핵심 매장 카드 그리드 -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3.5">
+                  <!-- 매장 1 -->
+                  <div class="rounded-2xl border border-slate-200 bg-slate-50/70 p-4 hover:border-rose-300 transition">
+                    <div class="flex items-center justify-between mb-1.5">
+                      <span class="text-[11px] font-bold px-2 py-0.5 rounded bg-indigo-100 text-indigo-800">원신 공식 굿즈</span>
+                      <span class="text-xs text-slate-400">코스 ①</span>
+                    </div>
+                    <h5 class="font-bold text-slate-900 text-sm">fantasy village P'PARCO점</h5>
+                    <p class="text-xs text-slate-600 mt-1 leading-relaxed">
+                      이케부쿠로역 동쪽 출구 바로 앞 <strong>P'PARCO 3층</strong>에 위치한 호요버스 공식 매장. 아크릴 스탠드, 캔뱃지, 봉제인형(누이), 원소 쿠션 등 신상 공식 굿즈 입고.
+                    </p>
+                  </div>
+
+                  <!-- 매장 2 -->
+                  <div class="rounded-2xl border border-slate-200 bg-slate-50/70 p-4 hover:border-rose-300 transition">
+                    <div class="flex items-center justify-between mb-1.5">
+                      <span class="text-[11px] font-bold px-2 py-0.5 rounded bg-rose-100 text-rose-800">프로세카 · 밀그램 신상</span>
+                      <span class="text-xs text-slate-400">코스 ②</span>
+                    </div>
+                    <h5 class="font-bold text-slate-900 text-sm">애니메이트 이케부쿠로본점</h5>
+                    <p class="text-xs text-slate-600 mt-1 leading-relaxed">
+                      세계 최대 규모(1~9층). <strong>4~5층</strong> 프로세카 유닛별 코너 & 밀그램 신작 굿즈, <strong>6층</strong> 밀그램 싱글 CD·프로세카 앨범. 1층 <strong>그라테(Gratte)</strong> 콜라보 음료/쿠키 확인!
+                    </p>
+                  </div>
+
+                  <!-- 매장 3 -->
+                  <div class="rounded-2xl border border-slate-200 bg-slate-50/70 p-4 hover:border-rose-300 transition">
+                    <div class="flex items-center justify-between mb-1.5">
+                      <span class="text-[11px] font-bold px-2 py-0.5 rounded bg-purple-100 text-purple-800">밀그램 · 보컬로이드</span>
+                      <span class="text-xs text-slate-400">코스 ③</span>
+                    </div>
+                    <h5 class="font-bold text-slate-900 text-sm">K-BOOKS 동화관 (Dōga-Kan)</h5>
+                    <p class="text-xs text-slate-600 mt-1 leading-relaxed">
+                      오토메 로드 위치. 보컬로이드, 우타이테, 웹 애니메이션 전문 매장으로 <strong>밀그램과 프로세카 희귀·품절 굿즈</strong>를 찾기에 가장 핵심적인 성지입니다.
+                    </p>
+                  </div>
+
+                  <!-- 매장 4 -->
+                  <div class="rounded-2xl border border-slate-200 bg-slate-50/70 p-4 hover:border-rose-300 transition">
+                    <div class="flex items-center justify-between mb-1.5">
+                      <span class="text-[11px] font-bold px-2 py-0.5 rounded bg-sky-100 text-sky-800">원신 · 프로세카 최애굿즈</span>
+                      <span class="text-xs text-slate-400">코스 ④</span>
+                    </div>
+                    <h5 class="font-bold text-slate-900 text-sm">K-BOOKS 게임관 · 플러스 · α</h5>
+                    <p class="text-xs text-slate-600 mt-1 leading-relaxed">
+                      모바일·콘솔 게임 전문관(게임관 / 게임관 플러스 / GAME館 α). <strong>원신과 프로젝트 세카이</strong>의 캔뱃지, 파샤코레, 아크릴이 캐릭터별로 세분화 진열되어 있습니다.
+                    </p>
+                  </div>
+
+                  <!-- 매장 5 -->
+                  <div class="rounded-2xl border border-slate-200 bg-slate-50/70 p-4 hover:border-rose-300 transition">
+                    <div class="flex items-center justify-between mb-1.5">
+                      <span class="text-[11px] font-bold px-2 py-0.5 rounded bg-amber-100 text-amber-800">라이브 · 2차 창작</span>
+                      <span class="text-xs text-slate-400">코스 ⑤</span>
+                    </div>
+                    <h5 class="font-bold text-slate-900 text-sm">K-BOOKS 라이브관 & 동인관</h5>
+                    <p class="text-xs text-slate-600 mt-1 leading-relaxed">
+                      2.5차원·라이브 굿즈(라이브관) 및 2차 창작 회지·굿즈(동인관) 추가 탐색.<br/>
+                      <span class="text-rose-600 font-semibold">※ K-BOOKS 운영시간: 평일 12:00~20:00 / 주말 11:30~20:00 (20시 마감 유의)</span>
+                    </p>
+                  </div>
+
+                  <!-- 매장 6 -->
+                  <div class="rounded-2xl border border-slate-200 bg-slate-50/70 p-4 hover:border-rose-300 transition">
+                    <div class="flex items-center justify-between mb-1.5">
+                      <span class="text-[11px] font-bold px-2 py-0.5 rounded bg-emerald-100 text-emerald-800">가족 복합 쇼핑몰</span>
+                      <span class="text-xs text-slate-400">코스 ⑥ (18:30~)</span>
+                    </div>
+                    <h5 class="font-bold text-slate-900 text-sm">선샤인시티 (Sunshine City)</h5>
+                    <p class="text-xs text-slate-600 mt-1 leading-relaxed">
+                      <strong>포켓몬 센터 메가 도쿄</strong>, 지브리 스토어(동구리 공화국), 반다이 남코 크로스 스토어 등 가족 모두가 함께 즐기는 캐릭터 숍 & 쇼핑몰.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 1일차 추천 식당 -->
+            <div class="rounded-2xl bg-amber-50/70 border border-amber-200/80 p-4 sm:p-5">
+              <div class="flex items-center gap-2 font-bold text-amber-950 text-sm sm:text-base mb-3">
+                <i class="fa-solid fa-utensils text-amber-600"></i> 1일차 저녁 추천 맛집 (이케부쿠로 동쪽 출구 권역)
+              </div>
+              <div class="grid grid-cols-1 md:grid-cols-3 gap-3 text-xs sm:text-sm">
+                <div class="bg-white p-3.5 rounded-xl border border-amber-100">
+                  <div class="font-bold text-slate-900">1. 규카츠 이로하</div>
+                  <p class="text-slate-600 mt-1">애니메이트에서 이케부쿠로역으로 가는 길목에 위치해 동선 최적. 개인 화로에 소고기 커틀릿을 구워 먹는 인기 맛집.</p>
+                </div>
+                <div class="bg-white p-3.5 rounded-xl border border-amber-100">
+                  <div class="font-bold text-slate-900">2. 무테키야 (Mutekiya)</div>
+                  <p class="text-slate-600 mt-1">이케부쿠로 대표 진한 돈코츠 라멘. 두툼한 차슈가 일품이며 회전율이 빠르지만 피크타임 대기가 있으므로 늦은 저녁 추천.</p>
+                </div>
+                <div class="bg-white p-3.5 rounded-xl border border-amber-100">
+                  <div class="font-bold text-slate-900">3. Unagi Yoshikawa (장어덮밥)</div>
+                  <p class="text-slate-600 mt-1">굿즈 탐방 후 든든하게 보양식을 즐기고 싶을 때 어른과 학생 모두 만족할 정갈한 장어덮밥 전문점.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- ==================== DAY 2 ==================== -->
+        <article id="panel-day2" class="day-panel bg-white rounded-3xl border border-slate-200 shadow-sm overflow-hidden">
+          <div class="bg-gradient-to-r from-sky-700 to-teal-600 px-6 py-5 text-white flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+            <div>
+              <span class="text-xs font-bold uppercase tracking-widest text-sky-100">DAY 02 · 11월 20일 (금)</span>
+              <h3 class="text-xl sm:text-2xl font-extrabold mt-0.5">가마쿠라 & 에노시마 자유여행</h3>
+            </div>
+            <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-black/20 text-xs font-semibold w-fit">
+              <i class="fa-solid fa-train-tram"></i> 에노덴 해안 전차 & 애니 성지 자유여행
+            </span>
+          </div>
+
+          <div class="p-5 sm:p-7 space-y-6">
+            <!-- 코스 개요 및 추천 교통편 & 패스 이용 팁 -->
+            <div class="rounded-2xl bg-sky-50/70 border border-sky-200/80 p-4 sm:p-5 space-y-3">
+              <p class="text-sm text-slate-700 leading-relaxed">
+                바다와 고즈넉한 사찰, 레트로 해안 전차(에노덴), 그리고 애니메이션 명소가 어우러진 코스로, 이케부쿠로에서 출발해 환승을 최소화하여 다녀올 수 있습니다.
+              </p>
+              <div class="grid grid-cols-1 lg:grid-cols-2 gap-3 text-xs sm:text-sm">
+                <div class="bg-white p-3.5 rounded-xl border border-sky-100">
+                  <div class="font-bold text-sky-950 mb-1"><i class="fa-solid fa-ticket text-sky-600 mr-1.5"></i>추천 교통 패스 & 이용 팁</div>
+                  <p class="text-slate-600 leading-relaxed">
+                    <strong>에노시마-가마쿠라 프리패스 (성인 1,640엔)</strong>: 신주쿠역 출발 기준 왕복 오다큐선 + 에노덴 전 구간 무제한 탑승 포함. 신주쿠역 서쪽 출구 오다큐 여행 서비스 센터 또는 자동발권기에서 당일 현장 구매 가능하며, 별도 패스 없이 <strong>스이카/파스모</strong>로 그대로 태그해도 요금 차이는 크지 않습니다.
+                  </p>
+                </div>
+                <div class="bg-white p-3.5 rounded-xl border border-sky-100">
+                  <div class="font-bold text-sky-950 mb-1"><i class="fa-solid fa-route text-teal-600 mr-1.5"></i>가는 길 이동 경로</div>
+                  <ul class="text-slate-600 space-y-1 leading-relaxed">
+                    <li><strong>① 이케부쿠로역 → 신주쿠역:</strong> JR 야마노테선 또는 사이쿄선 탑승 (약 10분)</li>
+                    <li><strong>② 신주쿠역 → 후지사와역:</strong> 오다큐선 급행/쾌속급행 탑승 (약 55~60분)</li>
+                    <li><strong>③ 후지사와역 → 에노덴(Enoden) 환승:</strong> 해안과 마을 사이를 달리는 명물 노면전차 탑승</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- 시간대별 상세 추천 동선 -->
+            <div class="space-y-5">
+              <div class="timeline-item relative pl-9">
+                <div class="timeline-line"></div>
+                <div class="absolute left-0 top-1 w-8 h-8 rounded-full bg-sky-700 text-white text-xs font-bold flex items-center justify-center">1</div>
+                <div class="text-xs font-bold text-sky-700">08:30 ~ 10:00</div>
+                <h4 class="text-base font-bold text-slate-900">이케부쿠로 출발 → 에노시마 도착</h4>
+                <p class="text-sm text-slate-600 mt-1">
+                  이케부쿠로에서 신주쿠를 거쳐 오다큐선으로 후지사와역까지 이동한 뒤, 에노덴을 타고 <strong>에노시마역</strong>에서 하차합니다. (역에서 에노시마 섬 입구까지 도보 약 10~15분)
+                </p>
+              </div>
+
+              <div class="timeline-item relative pl-9">
+                <div class="timeline-line"></div>
+                <div class="absolute left-0 top-1 w-8 h-8 rounded-full bg-teal-600 text-white text-xs font-bold flex items-center justify-center">2</div>
+                <div class="text-xs font-bold text-teal-700">10:00 ~ 12:30</div>
+                <h4 class="text-base font-bold text-slate-900">에노시마 (Enoshima) 섬 탐방</h4>
+                <p class="text-sm text-slate-600 mt-1">
+                  <strong>벤자이텐 나카미세 도리</strong> 상점가에서 명물 <strong>타코센베이(문어 전병)</strong>와 아이스크림을 맛보며 산책하고, 체력을 아끼려면 <strong>에스카(유료 에스컬레이터)</strong>를 타고 <strong>에노시마 신사</strong> 정상부까지 편하게 이동합니다. <strong>에노시마 씨캔들(전망 등대) & 사무엘 코킹 정원</strong>에서는 맑은 날 사가미만 바다와 후지산 실루엣까지 한눈에 감상할 수 있습니다.
+                </p>
+              </div>
+
+              <div class="timeline-item relative pl-9">
+                <div class="timeline-line"></div>
+                <div class="absolute left-0 top-1 w-8 h-8 rounded-full bg-amber-600 text-white text-xs font-bold flex items-center justify-center">3</div>
+                <div class="text-xs font-bold text-amber-700">12:30 ~ 13:40</div>
+                <h4 class="text-base font-bold text-slate-900">점심 식사 (에노시마 명물 해산물 요리)</h4>
+                <p class="text-sm text-slate-600 mt-1">
+                  에노시마 명물인 생멸치·삶은 멸치 덮밥(<strong>시라스동</strong>) 또는 신선한 해산물 덮밥 전문점(토비쵸 본점 등)에서 점심을 즐깁니다.
+                </p>
+              </div>
+
+              <div class="timeline-item relative pl-9">
+                <div class="timeline-line"></div>
+                <div class="absolute left-0 top-1 w-8 h-8 rounded-full bg-rose-600 text-white text-xs font-bold flex items-center justify-center">4</div>
+                <div class="text-xs font-bold text-rose-600">14:00 ~ 14:40</div>
+                <h4 class="text-base font-bold text-slate-900">가마쿠라코코마에역 (Kamakurakokomae) 포토스팟</h4>
+                <p class="text-sm text-slate-600 mt-1">
+                  에노시마역에서 에노덴을 타고 2정거장 이동합니다. 바다 바로 앞 기찻길 건널목(슬램덩크 오프닝 배경지)에서 푸른 바다와 초록색 에노덴 열차가 지나가는 풍경을 사진으로 남깁니다. <span class="text-rose-600 font-semibold">(안전선 준수 촬영)</span>
+                </p>
+              </div>
+
+              <div class="timeline-item relative pl-9">
+                <div class="timeline-line"></div>
+                <div class="absolute left-0 top-1 w-8 h-8 rounded-full bg-emerald-700 text-white text-xs font-bold flex items-center justify-center">5</div>
+                <div class="text-xs font-bold text-emerald-700">14:50 ~ 16:00</div>
+                <h4 class="text-base font-bold text-slate-900">하세역 (Hase) — 고토쿠인(가마쿠라 대불) & 하세데라</h4>
+                <p class="text-sm text-slate-600 mt-1">
+                  하세역 하차 후 도보 약 7분 거리의 <strong>고토쿠인</strong>에서 높이 약 11.3m의 거대한 청동 좌불상을 관람합니다. 시간 여유 시 인근 <strong>하세데라</strong> 사찰 정원에서 11월 중순 단풍과 유이가하마 해변 전망을 함께 둘러보세요.
+                </p>
+              </div>
+
+              <div class="timeline-item relative pl-9">
+                <div class="timeline-line"></div>
+                <div class="absolute left-0 top-1 w-8 h-8 rounded-full bg-indigo-700 text-white text-xs font-bold flex items-center justify-center">6</div>
+                <div class="text-xs font-bold text-indigo-700">16:15 ~ 17:45</div>
+                <h4 class="text-base font-bold text-slate-900">가마쿠라역 & 고마치 도리 (Komachi-dori)</h4>
+                <p class="text-sm text-slate-600 mt-1">
+                  종점 가마쿠라역 옆 상점가인 <strong>고마치 도리</strong>에서 말차 디저트, 어묵, 기념품 숍, 지브리 숍(동구리 공화국)을 구경하고, 도보 10분 거리의 <strong>쓰루가오카 하치만구</strong> 신사 단풍 산책으로 일정을 마무리합니다.
+                </p>
+              </div>
+
+              <div class="timeline-item relative pl-9">
+                <div class="timeline-line"></div>
+                <div class="absolute left-0 top-1 w-8 h-8 rounded-full bg-slate-800 text-white text-xs font-bold flex items-center justify-center">7</div>
+                <div class="text-xs font-bold text-slate-600">18:00 ~ 19:20</div>
+                <h4 class="text-base font-bold text-slate-900">가마쿠라역 출발 → 이케부쿠로 직통 복귀</h4>
+                <p class="text-sm text-slate-600 mt-1">
+                  가마쿠라역에서 <strong>JR 쇼난신주쿠라인(Shonan-Shinjuku Line)</strong> 직통 열차를 타면 <strong>환승 없이 한 번에 이케부쿠로역까지 약 65분</strong> 만에 도착합니다. 숙소 근처에서 편하게 저녁 식사를 하시면 됩니다.
+                </p>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- ==================== DAY 3 ==================== -->
+        <article id="panel-day3" class="day-panel bg-white rounded-3xl border border-slate-200 shadow-sm overflow-hidden">
+          <div class="bg-gradient-to-r from-indigo-900 via-blue-900 to-slate-900 px-6 py-5 text-white flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+            <div>
+              <span class="text-xs font-bold uppercase tracking-widest text-amber-300">DAY 03 · 11월 21일 (토)</span>
+              <h3 class="text-xl sm:text-2xl font-extrabold mt-0.5">도쿄 대표 신사 & 도쿄역 마루노우치 야경 전망대</h3>
+            </div>
+            <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/15 text-xs font-semibold w-fit">
+              <i class="fa-solid fa-city"></i> 전통 신사 단풍 + 도쿄역 야경
+            </span>
+          </div>
+
+          <div class="p-5 sm:p-7 space-y-6">
+            <div class="space-y-5">
+              <!-- 오전 -->
+              <div class="timeline-item relative pl-9">
+                <div class="timeline-line"></div>
+                <div class="absolute left-0 top-1 w-8 h-8 rounded-full bg-amber-600 text-white text-xs font-bold flex items-center justify-center">1</div>
+                <div class="text-xs font-bold text-amber-600">09:30 ~ 12:00 (오전)</div>
+                <h4 class="text-base font-bold text-slate-900">메이지 신궁 산책 & 하라주쿠 점심</h4>
+                <p class="text-sm text-slate-600 mt-1">
+                  이케부쿠로에서 JR 야마노테선으로 하라주쿠역까지 약 15분 소요. 울창한 도심 속 숲길과 일본 최대 목조 도리이를 지나 신사 본전을 관람하며 11월 중순의 단풍·은행나무 풍경을 만끽합니다.
+                </p>
+              </div>
+
+              <!-- 오후 -->
+              <div class="timeline-item relative pl-9">
+                <div class="timeline-line"></div>
+                <div class="absolute left-0 top-1 w-8 h-8 rounded-full bg-rose-600 text-white text-xs font-bold flex items-center justify-center">2</div>
+                <div class="text-xs font-bold text-rose-600">13:30 ~ 17:00 (오후)</div>
+                <h4 class="text-base font-bold text-slate-900">아사쿠사 센소지 & 나카미세 도리 상점가</h4>
+                <p class="text-sm text-slate-600 mt-1">
+                  메이지진구마에역에서 지하철 긴자선(오모테산도 환승)으로 아사쿠사 이동. 거대한 붉은 등불이 걸린 <strong>가미나리몬</strong>과 상점가(나카미세 도리)에서 인형빵(닌교야키), 말차 아이스크림 등 길거리 간식을 즐깁니다. <span class="text-rose-600 font-semibold">(토요일 오후 인파가 많으므로 소지품 주의 및 여유 이동 권장)</span>
+                </p>
+              </div>
+
+              <!-- 저녁 -->
+              <div class="timeline-item relative pl-9">
+                <div class="timeline-line"></div>
+                <div class="absolute left-0 top-1 w-8 h-8 rounded-full bg-indigo-800 text-white text-xs font-bold flex items-center justify-center">3</div>
+                <div class="text-xs font-bold text-indigo-700">18:00 ~ 21:00 (저녁 & 야경)</div>
+                <h4 class="text-base font-bold text-slate-900">도쿄역 무료 옥상정원 야경 & 마루노우치 야경 투어</h4>
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 mt-2.5 text-xs">
+                  <div class="p-3 rounded-xl bg-indigo-50 border border-indigo-100">
+                    <div class="font-bold text-indigo-950">★ KITTE 가든 (6층 무료 옥상정원)</div>
+                    <p class="text-slate-600 mt-1">도쿄역 마루노우치 남쪽 출구 바로 앞. 붉은 벽돌 도쿄역 전경과 신칸센, 빌딩 숲 야경을 가장 가까이서 조망.</p>
+                  </div>
+                  <div class="p-3 rounded-xl bg-indigo-50 border border-indigo-100">
+                    <div class="font-bold text-indigo-950">★ 신마루노우치 빌딩 테라스 (7층)</div>
+                    <p class="text-slate-600 mt-1">도쿄역 건너편. 7층 식당가 <strong>marunouchi HOUSE</strong> 테라스에서 도쿄역 정면 각도의 야경 감상.</p>
+                  </div>
+                  <div class="p-3 rounded-xl bg-slate-50 border border-slate-200">
+                    <div class="font-bold text-slate-800">☆ Marunouchi Terrace & 대안</div>
+                    <p class="text-slate-600 mt-1">마루노우치 거리의 세련된 야경 산책. (고층 파노라마 대안: 시부야 스카이는 사전 예약 필수 및 동선상 도쿄역이 더 여유로움)</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 3일차 시간대별 추천 식당 -->
+            <div class="rounded-2xl bg-indigo-50/60 border border-indigo-200/80 p-4 sm:p-5">
+              <div class="flex items-center gap-2 font-bold text-indigo-950 text-sm sm:text-base mb-3">
+                <i class="fa-solid fa-utensils text-indigo-600"></i> 3일차 동선별 추천 맛집 (하라주쿠 · 아사쿠사 · 도쿄역)
+              </div>
+              <div class="grid grid-cols-1 md:grid-cols-3 gap-3 text-xs sm:text-sm">
+                <div class="bg-white p-3.5 rounded-xl border border-indigo-100">
+                  <span class="text-[11px] font-bold text-amber-700 bg-amber-100 px-2 py-0.5 rounded">점심 · 하라주쿠</span>
+                  <ul class="mt-2 space-y-1.5 text-slate-700">
+                    <li><strong>• 규카츠 모토무라 위드 하라주쿠점:</strong> 역 바로 앞 쇼핑몰 지하. <span class="text-rose-600 font-semibold">11시 오픈 직후 방문 시 대기 최소화!</span></li>
+                    <li><strong>• 로스트 비프 오노 하라주쿠점:</strong> 촉촉한 소고기 로스트 비프 덮밥 전문점.</li>
+                  </ul>
+                </div>
+
+                <div class="bg-white p-3.5 rounded-xl border border-indigo-100">
+                  <span class="text-[11px] font-bold text-rose-700 bg-rose-100 px-2 py-0.5 rounded">간식/이른 저녁 · 아사쿠사</span>
+                  <ul class="mt-2 space-y-1.5 text-slate-700">
+                    <li><strong>• 아사쿠사몬쟈 젠야 / 아사쿠사 츠루지로:</strong> 직원이 직접 구워주는 도쿄 명물 몬자야키 & 오코노미야키.</li>
+                    <li><strong>• 에도마에 우나기 가마메시 에도사와:</strong> 전통 장어 솥밥 전문점.</li>
+                  </ul>
+                </div>
+
+                <div class="bg-white p-3.5 rounded-xl border border-indigo-100">
+                  <span class="text-[11px] font-bold text-indigo-700 bg-indigo-100 px-2 py-0.5 rounded">저녁 · 도쿄역</span>
+                  <ul class="mt-2 space-y-1.5 text-slate-700">
+                    <li><strong>• 츠지한 니혼바시 본점:</strong> 야에스 북쪽 출구 도보 5분. 해산물 덮밥 후 도미 육수 오차즈케 마무리 일품.</li>
+                    <li><strong>• 로쿠린샤 도쿄역점:</strong> 지하 1층 도쿄 라멘 스트리트 대표 츠케멘 맛집.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- ==================== DAY 4 ==================== -->
+        <article id="panel-day4" class="day-panel bg-white rounded-3xl border border-slate-200 shadow-sm overflow-hidden">
+          <div class="bg-gradient-to-r from-slate-800 to-slate-700 px-6 py-5 text-white flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+            <div>
+              <span class="text-xs font-bold uppercase tracking-widest text-slate-300">DAY 04 · 11월 22일 (일)</span>
+              <h3 class="text-xl sm:text-2xl font-extrabold mt-0.5">체크아웃 & 나리타 공항 출국 (13:00 출발)</h3>
+            </div>
+            <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-amber-500/20 text-amber-300 border border-amber-400/30 text-xs font-semibold w-fit">
+              <i class="fa-solid fa-clock"></i> 늦어도 10:30~11:00 공항 도착 권장
+            </span>
+          </div>
+
+          <div class="p-5 sm:p-7">
+            <div class="space-y-5">
+              <div class="timeline-item relative pl-9">
+                <div class="timeline-line"></div>
+                <div class="absolute left-0 top-1 w-8 h-8 rounded-full bg-slate-800 text-white text-xs font-bold flex items-center justify-center">1</div>
+                <div class="text-xs font-bold text-slate-600">08:30 ~ 09:30</div>
+                <h4 class="text-base font-bold text-slate-900">아침 식사, 마지막 쇼핑 & 숙소 체크아웃</h4>
+                <p class="text-sm text-slate-600 mt-1">
+                  전날 저녁 또는 이른 아침 이케부쿠로역 백화점 식품관·돈키호테에서 쇼핑한 기념품과 캐리어를 정리해 09:30 전 체크아웃합니다.
+                </p>
+              </div>
+
+              <div class="timeline-item relative pl-9">
+                <div class="timeline-line"></div>
+                <div class="absolute left-0 top-1 w-8 h-8 rounded-full bg-sky-600 text-white text-xs font-bold flex items-center justify-center">2</div>
+                <div class="text-xs font-bold text-sky-600">09:30 ~ 10:40</div>
+                <h4 class="text-base font-bold text-slate-900">이케부쿠로 → 닛포리역 환승 → 게이세이 스카이라이너 탑승</h4>
+                <p class="text-sm text-slate-600 mt-1">
+                  일요일 오전 도로 정체 변수를 피하기 위해 <strong>기차 이동을 강력 권장</strong>합니다. 이케부쿠로역에서 JR 야마노테선으로 닛포리역 이동(약 13분) 후, <strong>09:40~10:00경 출발하는 스카이라이너</strong>를 탑승하면 약 36분 만에 나리타공항에 정확히 도착합니다.
+                </p>
+              </div>
+
+              <div class="timeline-item relative pl-9">
+                <div class="timeline-line"></div>
+                <div class="absolute left-0 top-1 w-8 h-8 rounded-full bg-amber-600 text-white text-xs font-bold flex items-center justify-center">3</div>
+                <div class="text-xs font-bold text-amber-600">11:00 ~ 13:00</div>
+                <h4 class="text-base font-bold text-slate-900">출국 수속, 면세점 쇼핑 & 귀국</h4>
+                <p class="text-sm text-slate-600 mt-1">
+                  수하물 위탁 및 보안 검색 후 면세 구역에서 도쿄바나나, 로이스 초콜릿 등 마지막 선물을 구매(웰컴 스이카 잔액 소진)하고 13:00 귀국편에 탑승합니다.
+                </p>
+              </div>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- =====================================================================
+         섹션 3: 11월 도쿄 근교 당일치기 투어 비교 (2일차 대안 가이드)
+         ===================================================================== -->
+    <section id="section-suburbs" class="scroll-mt-20">
+      <div class="mb-6">
+        <span class="text-xs font-bold uppercase tracking-wider text-emerald-600">November Day-Trip Options</span>
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 mt-1">3. 11월 근교 투어 후보지 상세 비교</h2>
+        <p class="text-sm text-slate-500 mt-1">기존 계획인 하코네 외에 11월 중순(단풍 절정기) 관광객 평점이 가장 높은 도쿄 근교 4곳을 비교해 드립니다.</p>
+      </div>
+
+      <!-- 카드 4개 -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-5 mb-6">
+        <!-- 후보 1: 후지산 & 가와구치코 -->
+        <div class="bg-white rounded-3xl border-2 border-amber-300 shadow-sm p-5 sm:p-6 relative">
+          <span class="inline-block px-2.5 py-1 rounded-lg text-xs font-bold bg-amber-500 text-white mb-2">
+            ★ 11월 관광객 선호도 1위 · 단풍 & 설경 절정
+          </span>
+          <h3 class="text-lg font-extrabold text-slate-900">① 후지산 & 가와구치코 (Kawaguchiko)</h3>
+          <p class="text-xs text-slate-500 mb-3">편도 약 1시간 40분 ~ 2시간 · 신주쿠 출발 일일 버스 투어 추천</p>
+          <p class="text-sm text-slate-700 leading-relaxed mb-3">
+            11월 중순은 후지산 정상에 하얀 눈이 쌓이고 호숫가 단풍이 절정에 달해 1년 중 풍경이 가장 아름다운 시기입니다. 하코네보다 후지산이 훨씬 크고 선명하게 보입니다.
+          </p>
+          <div class="text-xs bg-amber-50/80 p-3 rounded-xl text-amber-950">
+            <strong>주요 코스:</strong> 아라쿠라야마 센겐 공원(오층탑+후지산 뷰), 오이시 공원(가와구치코 단풍 회랑), 오시노 핫카이(용출수 마을), 로손 포토스팟
+          </div>
+        </div>
+
+        <!-- 후보 2: 가마쿠라 & 에노시마 -->
+        <div class="bg-white rounded-3xl border-2 border-sky-300 shadow-sm p-5 sm:p-6 relative">
+          <span class="inline-block px-2.5 py-1 rounded-lg text-xs font-bold bg-sky-600 text-white mb-2">
+            ★ 학생 · 가족 동반 강력 추천 · 애니 성지 & 바다
+          </span>
+          <h3 class="text-lg font-extrabold text-slate-900">② 가마쿠라 & 에노시마 (Kamakura & Enoshima)</h3>
+          <p class="text-xs text-slate-500 mb-3">편도 약 1시간 ~ 1시간 10분 · 자유여행(프리패스) 또는 버스 투어</p>
+          <p class="text-sm text-slate-700 leading-relaxed mb-3">
+            바다와 고즈넉한 사찰, 애니메이션 성지순례가 결합된 코스로 이동 시간이 짧고 먹거리·볼거리가 다양합니다. 맑은 11월 날씨에는 해변 너머 후지산 실루엣까지 감상할 수 있습니다.
+          </p>
+          <div class="text-xs bg-sky-50/80 p-3 rounded-xl text-sky-950">
+            <strong>주요 코스:</strong> 에노덴 해안 전차, 가마쿠라코코마에역(슬램덩크 건널목), 쓰루가오카 하치만구(단풍), 고토쿠인(가마쿠라 대불), 에노시마 전망대 & 시라스동
+          </div>
+        </div>
+
+        <!-- 후보 3: 하코네 (기존 계획) -->
+        <div class="bg-white rounded-3xl border border-slate-200 shadow-sm p-5 sm:p-6">
+          <span class="inline-block px-2.5 py-1 rounded-lg text-xs font-bold bg-emerald-600 text-white mb-2">
+            기존 계획 · 온천 마을 & 화산 계곡 유람
+          </span>
+          <h3 class="text-lg font-extrabold text-slate-900">③ 하코네 (Hakone)</h3>
+          <p class="text-xs text-slate-500 mb-3">편도 약 1시간 30분 ~ 2시간 · 일일 버스 투어 추천</p>
+          <p class="text-sm text-slate-700 leading-relaxed mb-3">
+            유황 연기가 피어오르는 화산 계곡과 아시노코 호수 유람선, 아울렛 쇼핑까지 균형 있게 구성된 전통 인기 근교 코스입니다.
+          </p>
+          <div class="text-xs bg-slate-50 p-3 rounded-xl text-slate-700">
+            <strong>주요 코스:</strong> 아시노코 호수 해적선, 하코네 신사(평화의 도리이), 오와쿠다니 계곡(검은 달걀), 고텐바 프리미엄 아울렛
+          </div>
+        </div>
+
+        <!-- 후보 4: 닛코 & 가와고에 -->
+        <div class="bg-white rounded-3xl border border-slate-200 shadow-sm p-5 sm:p-6">
+          <span class="inline-block px-2.5 py-1 rounded-lg text-xs font-bold bg-slate-700 text-white mb-2">
+            역사 단풍(닛코) & 초근접 반나절(가와고에)
+          </span>
+          <h3 class="text-lg font-extrabold text-slate-900">④ 닛코 (Nikko) / 가와고에 (Kawagoe)</h3>
+          <p class="text-xs text-slate-500 mb-3">닛코: 편도 2시간~2시간 30분(버스투어) / 가와고에: 이케부쿠로에서 30분 직통</p>
+          <p class="text-sm text-slate-700 leading-relaxed mb-3">
+            <strong>• 닛코:</strong> 세계문화유산 닛코 도쇼구와 게곤 폭포·이로하자카 단풍 드라이브 명소.<br/>
+            <strong>• 가와고에:</strong> 숙소(이케부쿠로역)에서 도부 도조선 급행 30분 직통! '작은 에도' 전통 거리와 히카와 신사를 투어 없이 반나절 만에 가볍게 다녀올 수 있습니다.
+          </p>
+        </div>
+      </div>
+
+      <!-- 한눈에 보는 요약 비교표 -->
+      <div class="bg-white rounded-3xl border border-slate-200 shadow-sm overflow-hidden">
+        <div class="overflow-x-auto">
+          <table class="w-full text-left border-collapse text-xs sm:text-sm">
+            <thead>
+              <tr class="bg-slate-900 text-white">
+                <th class="py-3.5 px-4 font-bold">여행지</th>
+                <th class="py-3.5 px-4 font-bold">추천 포인트</th>
+                <th class="py-3.5 px-4 font-bold">이동 거리 (편도)</th>
+                <th class="py-3.5 px-4 font-bold">11월 20일경 특징</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-slate-200">
+              <tr class="bg-amber-50/40">
+                <td class="py-3.5 px-4 font-bold text-slate-900">후지산 · 가와구치코</td>
+                <td class="py-3.5 px-4 text-amber-800 font-semibold">11월 풍경 · 인기도 최고</td>
+                <td class="py-3.5 px-4 text-slate-600">약 1시간 40분 ~ 2시간</td>
+                <td class="py-3.5 px-4 text-slate-700">후지산 설경 + 호숫가 단풍 회랑 절정</td>
+              </tr>
+              <tr class="bg-sky-50/40">
+                <td class="py-3.5 px-4 font-bold text-slate-900">가마쿠라 · 에노시마</td>
+                <td class="py-3.5 px-4 text-sky-800 font-semibold">바다 · 애니 성지 · 먹거리 조화</td>
+                <td class="py-3.5 px-4 text-slate-600">약 1시간 ~ 1시간 10분</td>
+                <td class="py-3.5 px-4 text-slate-700">온화한 해안 산책, 에노덴 전차 감성</td>
+              </tr>
+              <tr>
+                <td class="py-3.5 px-4 font-bold text-slate-900">하코네 (기존 계획)</td>
+                <td class="py-3.5 px-4 text-slate-700">온천 마을 · 유람선 · 화산 계곡</td>
+                <td class="py-3.5 px-4 text-slate-600">약 1시간 30분 ~ 2시간</td>
+                <td class="py-3.5 px-4 text-slate-700">화산 계곡(오와쿠다니)과 아시노코 호수 유람</td>
+              </tr>
+              <tr>
+                <td class="py-3.5 px-4 font-bold text-slate-900">가와고에 (반나절)</td>
+                <td class="py-3.5 px-4 text-slate-700">이케부쿠로에서 초근접</td>
+                <td class="py-3.5 px-4 font-bold text-emerald-700">약 30분 (직통 열차)</td>
+                <td class="py-3.5 px-4 text-slate-700">투어 없이 반나절 가벼운 전통 거리 산책</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================================
+         섹션 4: 출발 전 사전 예약 & 기간 한정 이벤트 체크리스트 (Interactive)
+         ===================================================================== -->
+    <section id="section-checklist" class="scroll-mt-20">
+      <div class="flex flex-col sm:flex-row sm:items-end justify-between mb-6 gap-3">
+        <div>
+          <span class="text-xs font-bold uppercase tracking-wider text-indigo-600">Pre-Trip Action Plan</span>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 mt-1">4. 사전 예약 & 이벤트 확인 체크리스트</h2>
+          <p class="text-sm text-slate-500 mt-1">체크 상태는 현재 브라우저에 자동 저장됩니다. 출발 전 하나씩 완료해 보세요!</p>
+        </div>
+        <div class="flex items-center gap-3 no-print">
+          <span id="progress-text" class="text-xs font-bold px-3 py-1.5 rounded-full bg-indigo-100 text-indigo-800">완료: 0 / 8</span>
+          <button onclick="resetChecklist()" class="text-xs font-semibold text-slate-500 hover:text-rose-600 underline">초기화</button>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+        <!-- 체크리스트 목록 (2칸 차지) -->
+        <div class="lg:col-span-2 bg-white rounded-3xl border border-slate-200 shadow-sm p-5 sm:p-7 space-y-3" id="checklist-container">
+          <!-- JS로 렌더링 -->
+        </div>
+
+        <!-- 기간 한정 팝업 & 콜라보 카페 확인 가이드 (1칸 차지) -->
+        <div class="bg-gradient-to-br from-slate-900 to-indigo-950 text-white rounded-3xl p-5 sm:p-6 flex flex-col justify-between">
+          <div>
+            <div class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-rose-500/20 text-rose-300 border border-rose-400/30 text-xs font-bold mb-3">
+              <i class="fa-brands fa-x-twitter"></i> 출발 2~3주 전 필수 체크!
+            </div>
+            <h3 class="text-lg font-extrabold mb-2">기간 한정 팝업 & 콜라보 카페 확인법</h3>
+            <p class="text-xs text-slate-300 leading-relaxed mb-4">
+              일본의 콜라보 카페·팝업 스토어는 보통 개최 2~3주 전에 공지됩니다. 출발 직전(11월 16~18일) 아래 공식 X 계정과 일본어 검색어를 확인하세요.
+            </p>
+
+            <div class="space-y-3 text-xs">
+              <div class="p-3 rounded-2xl bg-white/10 border border-white/10">
+                <div class="font-bold text-amber-300 mb-1">1. 원신 (<span class="font-mono">@Genshin_7</span>)</div>
+                <p class="text-slate-200 leading-relaxed">
+                  스위츠 파라다이스 앱(5주 전 선착순 예약), 호요버스 팝업(선샤인시티·아키하바라·시부야 파르코). 카페 예약 마감 시 테이크아웃 음료·굿즈 현장 대기 구매 가능.
+                </p>
+              </div>
+
+              <div class="p-3 rounded-2xl bg-white/10 border border-white/10">
+                <div class="font-bold text-sky-300 mb-1">2. 프로젝트 세카이 (<span class="font-mono">@pj_sekai</span>)</div>
+                <p class="text-slate-200 leading-relaxed">
+                  애니메이트 페어(특전 증정), 애니메이트 카페 이케부쿠로(Club Animate 사전 추첨/선착순), 마루이 팝업 스토어(LINE/라이브포켓 정리권).
+                </p>
+              </div>
+
+              <div class="p-3 rounded-2xl bg-white/10 border border-white/10">
+                <div class="font-bold text-rose-300 mb-1">3. 밀그램 (<span class="font-mono">@MILGRAM_info</span>)</div>
+                <p class="text-slate-200 leading-relaxed">
+                  애니메이트 본점 1층 그라테(Gratte) 콜라보, AMNIBUS / GraffArt Shop(이케부쿠로 본점) 선행 판매 팝업(대부분 예약 없이 현장 구매 가능).
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-4 pt-4 border-t border-white/15">
+            <div class="text-[11px] font-bold text-slate-300 mb-1.5">🔍 X(트위터) 추천 일본어 검색 키워드</div>
+            <div class="flex flex-wrap gap-1.5 text-[11px] font-mono">
+              <span class="px-2 py-1 rounded bg-white/15 text-amber-200">原神 ポップアップ 池袋</span>
+              <span class="px-2 py-1 rounded bg-white/15 text-sky-200">プロセカ ポップアップ 池袋</span>
+              <span class="px-2 py-1 rounded bg-white/15 text-rose-200">MILGRAM 池袋</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================================
+         섹션 5: 여행 준비물 & 캐리어 패킹 가이드 (Packing List & Luggage Rules)
+         ===================================================================== -->
+    <section id="section-packing" class="scroll-mt-20">
+      <div class="flex flex-col sm:flex-row sm:items-end justify-between mb-6 gap-3">
+        <div>
+          <span class="text-xs font-bold uppercase tracking-wider text-teal-600">Packing List & Luggage Guide</span>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 mt-1">5. 여행 준비물 & 캐리어 패킹 가이드</h2>
+          <p class="text-sm text-slate-500 mt-1">기본 필수품부터 11월 도쿄·굿즈 투어 맞춤 준비물, 항공 수하물 규정까지 한 번에 점검하세요.</p>
+        </div>
+        <div class="flex items-center gap-3 no-print">
+          <span id="packing-progress-text" class="text-xs font-bold px-3 py-1.5 rounded-full bg-teal-100 text-teal-800">준비 완료: 0 / 17</span>
+          <button onclick="resetPackingChecklist()" class="text-xs font-semibold text-slate-500 hover:text-rose-600 underline">초기화</button>
+        </div>
+      </div>
+
+      <!-- 3단 준비물 체크리스트 카드 -->
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-6">
+        <!-- ① 기본 필수 준비물 -->
+        <div class="bg-white rounded-3xl border border-slate-200 shadow-sm p-5 sm:p-6 flex flex-col">
+          <div class="flex items-center gap-2.5 mb-4 pb-3 border-b border-slate-100">
+            <div class="w-9 h-9 rounded-xl bg-rose-100 text-rose-700 flex items-center justify-center font-bold">
+              <i class="fa-solid fa-passport"></i>
+            </div>
+            <div>
+              <h3 class="text-base sm:text-lg font-extrabold text-slate-900">① 기본 필수 준비물</h3>
+              <p class="text-xs text-slate-500">출입국 · 결제 · 통신 핵심 아이템</p>
+            </div>
+          </div>
+          <div id="packing-basic-container" class="space-y-2.5 flex-1">
+            <!-- JS로 렌더링 -->
+          </div>
+        </div>
+
+        <!-- ② 일반 여행객 추천 준비물 -->
+        <div class="bg-white rounded-3xl border border-slate-200 shadow-sm p-5 sm:p-6 flex flex-col">
+          <div class="flex items-center gap-2.5 mb-4 pb-3 border-b border-slate-100">
+            <div class="w-9 h-9 rounded-xl bg-amber-100 text-amber-700 flex items-center justify-center font-bold">
+              <i class="fa-solid fa-bag-shopping"></i>
+            </div>
+            <div>
+              <h3 class="text-base sm:text-lg font-extrabold text-slate-900">② 일반 여행객 추천 준비물</h3>
+              <p class="text-xs text-slate-500">11월 날씨 · 도보 여행 · 일본 현지 특화</p>
+            </div>
+          </div>
+          <div id="packing-general-container" class="space-y-2.5 flex-1">
+            <!-- JS로 렌더링 -->
+          </div>
+        </div>
+
+        <!-- ③ 개별·가족 맞춤 준비물 -->
+        <div class="bg-white rounded-3xl border border-slate-200 shadow-sm p-5 sm:p-6 flex flex-col">
+          <div class="flex items-center gap-2.5 mb-4 pb-3 border-b border-slate-100">
+            <div class="w-9 h-9 rounded-xl bg-indigo-100 text-indigo-700 flex items-center justify-center font-bold">
+              <i class="fa-solid fa-sparkles"></i>
+            </div>
+            <div>
+              <h3 class="text-base sm:text-lg font-extrabold text-slate-900">③ 개별·가족 맞춤 준비물</h3>
+              <p class="text-xs text-slate-500">굿즈 보호 · 쇼핑 확장 · 개인 위생</p>
+            </div>
+          </div>
+          <div id="packing-custom-container" class="space-y-2.5 flex-1">
+            <!-- JS로 렌더링 -->
+          </div>
+        </div>
+      </div>
+
+      <!-- 캐리어 쌀 때 주의할 점 (수하물 규정 & 패킹 팁) -->
+      <div class="bg-white rounded-3xl border border-slate-200 shadow-sm p-5 sm:p-7">
+        <div class="flex items-center gap-2.5 mb-5">
+          <div class="w-9 h-9 rounded-xl bg-slate-900 text-amber-400 flex items-center justify-center font-bold">
+            <i class="fa-solid fa-suitcase"></i>
+          </div>
+          <div>
+            <h3 class="text-lg sm:text-xl font-extrabold text-slate-900">캐리어 쌀 때 주의할 점 (항공 수하물 규정 & 패킹 팁)</h3>
+            <p class="text-xs sm:text-sm text-slate-500">공항 보안 검색대에서 물품을 폐기하거나 캐리어를 다시 여는 일이 없도록 미리 구분해 싸세요.</p>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+          <!-- 기내 반입 필수 -->
+          <div class="rounded-2xl bg-rose-50/70 border border-rose-200 p-4 sm:p-5">
+            <div class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-rose-600 text-white text-xs font-bold mb-2.5">
+              <i class="fa-solid fa-plane-up"></i> 기내 반입 필수 (위탁 절대 금지)
+            </div>
+            <h4 class="font-bold text-slate-900 text-sm mb-2">화재 위험 배터리 & 귀중품</h4>
+            <ul class="text-xs text-slate-700 space-y-1.5 list-disc list-inside leading-relaxed">
+              <li><strong>보조배터리 & 여분 리튬배터리:</strong> 부치는 캐리어(위탁 수하물)에 넣으면 보안 검색에 적발되므로 반드시 배낭·크로스백 등 기내 가방에 휴대하세요.</li>
+              <li><strong>배터리 내장 전자기기:</strong> 카메라, 노트북, 태블릿, 무선 고데기(배터리 분리 불가형은 반입 제한될 수 있음) 등.</li>
+              <li><strong>현금·여권·귀중품 & 라이터:</strong> 일회용 라이터는 1인 1개에 한해 몸에 소지(캐리어 수납 불가).</li>
+            </ul>
+          </div>
+
+          <!-- 위탁 수하물 필수 -->
+          <div class="rounded-2xl bg-sky-50/70 border border-sky-200 p-4 sm:p-5">
+            <div class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-sky-600 text-white text-xs font-bold mb-2.5">
+              <i class="fa-solid fa-box-archive"></i> 위탁 수하물 필수 (기내 반입 제한)
+            </div>
+            <h4 class="font-bold text-slate-900 text-sm mb-2">100ml 초과 액체·젤류 & 날카로운 물건</h4>
+            <ul class="text-xs text-slate-700 space-y-1.5 list-disc list-inside leading-relaxed">
+              <li><strong>100ml 초과 액체·젤·에어로졸:</strong> 스킨케어, 샴푸, 치약, 헤어스프레이, 그리고 귀국 시 구매하는 <strong>푸딩·곤약젤리·음료·화장품</strong>은 반드시 위탁 캐리어에 넣어야 합니다.</li>
+              <li><strong>기내 반입 액체 기준:</strong> 기내에 가져갈 화장품·손소독제는 <strong>개당 100ml 이하 용기</strong>에 담아 <strong>1L 투명 지퍼백 1개</strong>에 넣어야 통과됩니다.</li>
+              <li><strong>도구류:</strong> 가위, 손톱깎이, 눈썹칼, 장우산 등 뾰족하거나 긴 물건은 위탁 캐리어에 수납하세요.</li>
+            </ul>
+          </div>
+
+          <!-- 쇼핑 & 굿즈 패킹 팁 -->
+          <div class="rounded-2xl bg-amber-50/70 border border-amber-200 p-4 sm:p-5">
+            <div class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-amber-600 text-white text-xs font-bold mb-2.5">
+              <i class="fa-solid fa-box-open"></i> 굿즈 & 쇼핑 공간 확보 노하우
+            </div>
+            <h4 class="font-bold text-slate-900 text-sm mb-2">출국 시 캐리어 30~40% 비워두기</h4>
+            <ul class="text-xs text-slate-700 space-y-1.5 list-disc list-inside leading-relaxed">
+              <li><strong>여유 공간 확보:</strong> 이케부쿠로 애니 굿즈, 선샤인시티, 돈키호테 쇼핑량을 감안해 출국할 때 캐리어의 최소 <strong>30~40%는 빈 공간</strong>으로 출발하세요.</li>
+              <li><strong>파손 방지 완충재:</strong> 아크릴 스탠드나 피규어 상자 파손을 막기 위해 <strong>뽁뽁이(에어캡)</strong>나 얇은 의류 사이에 감싸 수납하면 안전합니다.</li>
+              <li><strong>보조가방 & 무게 확인:</strong> 수하물 추가 시 활용할 <strong>접이식 보스턴백</strong>을 챙기고, 항공사 무료 위탁 무게(보통 15~23kg) 초과에 유의하세요.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================================
+         섹션 6: 날짜별 예상 날씨 및 옷차림 가이드 (11월 19일 ~ 22일)
+         ===================================================================== -->
+    <section id="section-weather" class="scroll-mt-20">
+      <div class="mb-6">
+        <span class="text-xs font-bold uppercase tracking-wider text-sky-600">Weather & Outfit Forecast</span>
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 mt-1">6. 날짜별 예상 날씨 및 옷차림 가이드 (11월 19일~22일)</h2>
+        <p class="text-sm text-slate-500 mt-1">여행 기간 내내 비 소식 없이 대체로 맑고 쾌청한 늦가을 날씨가 예상되나, 아침·저녁 일교차가 크므로 겹쳐 입는 복장을 추천합니다.</p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5">
+        <!-- 11월 19일 (목) -->
+        <div class="bg-white rounded-3xl border border-slate-200 shadow-sm p-5 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="text-xs font-bold px-2.5 py-1 rounded-lg bg-rose-100 text-rose-700">1일차 · 11/19 (목)</span>
+              <i class="fa-solid fa-sun text-2xl text-amber-500"></i>
+            </div>
+            <div class="text-base font-extrabold text-slate-900">맑음 (가끔 구름)</div>
+            <div class="mt-2 flex items-baseline gap-2">
+              <span class="text-xs font-semibold text-sky-600">최저 9~11°C</span>
+              <span class="text-slate-300">/</span>
+              <span class="text-sm font-extrabold text-rose-600">최고 18~21°C</span>
+            </div>
+            <div class="text-xs text-slate-500 mt-1">강수확률: 10% 내외</div>
+          </div>
+          <div class="mt-4 pt-3 border-t border-slate-100 text-xs text-slate-600 leading-relaxed">
+            <strong class="text-slate-900 block mb-1">👕 추천 옷차림 (이케부쿠로 실내)</strong>
+            낮에는 포근하나 실내 쇼핑몰(애니메이트·파르코·선샤인시티) 난방을 고려해 가벼운 긴팔·니트에 탈착하기 쉬운 트렌치코트나 자켓 레이어드 추천.
+          </div>
+        </div>
+
+        <!-- 11월 20일 (금) -->
+        <div class="bg-white rounded-3xl border border-slate-200 shadow-sm p-5 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="text-xs font-bold px-2.5 py-1 rounded-lg bg-sky-100 text-sky-700">2일차 · 11/20 (금)</span>
+              <i class="fa-solid fa-cloud-sun text-2xl text-amber-500"></i>
+            </div>
+            <div class="text-base font-extrabold text-slate-900">맑음 (가끔 구름)</div>
+            <div class="mt-2 flex items-baseline gap-2">
+              <span class="text-xs font-semibold text-sky-600">최저 8~10°C</span>
+              <span class="text-slate-300">/</span>
+              <span class="text-sm font-extrabold text-rose-600">최고 17~19°C</span>
+            </div>
+            <div class="text-xs text-slate-500 mt-1">강수확률: 10% 내외</div>
+          </div>
+          <div class="mt-4 pt-3 border-t border-slate-100 text-xs text-slate-600 leading-relaxed">
+            <strong class="text-slate-900 block mb-1">🧥 추천 옷차림 (가마쿠라·에노시마)</strong>
+            해안가는 바닷바람이 불어 체감온도가 낮으므로 바람막이·경량 패딩 및 에노시마·사찰 도보 탐방에 적합한 발 편한 운동화 추천.
+          </div>
+        </div>
+
+        <!-- 11월 21일 (토) -->
+        <div class="bg-white rounded-3xl border border-slate-200 shadow-sm p-5 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="text-xs font-bold px-2.5 py-1 rounded-lg bg-indigo-100 text-indigo-700">3일차 · 11/21 (토)</span>
+              <i class="fa-solid fa-sun text-2xl text-amber-500"></i>
+            </div>
+            <div class="text-base font-extrabold text-slate-900">맑음 / 선선함</div>
+            <div class="mt-2 flex items-baseline gap-2">
+              <span class="text-xs font-semibold text-sky-600">최저 9~10°C</span>
+              <span class="text-slate-300">/</span>
+              <span class="text-sm font-extrabold text-rose-600">최고 13~16°C</span>
+            </div>
+            <div class="text-xs text-slate-500 mt-1">강수확률: 20% 내외</div>
+          </div>
+          <div class="mt-4 pt-3 border-t border-slate-100 text-xs text-slate-600 leading-relaxed">
+            <strong class="text-slate-900 block mb-1">🧣 추천 옷차림 (신사 & 야경 전망대)</strong>
+            낮 기온이 전날보다 내려가고 저녁 도쿄역 옥상 야경 전망대(KITTE 가든·신마루노우치 테라스)는 바람이 차가우니 코트·목도리 등 보온 신경쓰기.
+          </div>
+        </div>
+
+        <!-- 11월 22일 (일) -->
+        <div class="bg-white rounded-3xl border border-slate-200 shadow-sm p-5 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="text-xs font-bold px-2.5 py-1 rounded-lg bg-slate-200 text-slate-800">4일차 · 11/22 (일)</span>
+              <i class="fa-solid fa-sun text-2xl text-amber-500"></i>
+            </div>
+            <div class="text-base font-extrabold text-slate-900">맑고 선선한 늦가을</div>
+            <div class="mt-2 flex items-baseline gap-2">
+              <span class="text-xs font-semibold text-sky-600">최저 8~10°C</span>
+              <span class="text-slate-300">/</span>
+              <span class="text-sm font-extrabold text-rose-600">최고 14~16°C</span>
+            </div>
+            <div class="text-xs text-slate-500 mt-1">강수확률: 10% 내외</div>
+          </div>
+          <div class="mt-4 pt-3 border-t border-slate-100 text-xs text-slate-600 leading-relaxed">
+            <strong class="text-slate-900 block mb-1">✈️ 추천 옷차림 (귀국 이동일)</strong>
+            오전 체크아웃 및 공항 이동 시 쌀쌀할 수 있으며, 공항·기내 난방 온도 차에 대비해 겹쳐 입기 편한 옷차림 유지.
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- 푸터 -->
+  <footer class="bg-slate-900 text-slate-400 py-8 mt-14 border-t border-slate-800">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs">
+      <div>
+        <span class="font-bold text-white">2026 도쿄 3박 4일 가족 여행 디지털 가이드북</span> · 11월 19일(목) ~ 11월 22일(일)
+      </div>
+      <div>
+        즐겁고 안전한 도쿄 가족 여행 되세요! ✈️🇯🇵
+      </div>
+    </div>
+  </footer>
+
+  <!-- 인터랙티브 스크립트 -->
+  <script>
+    // 1. 일자별 필터 탭 전환 기능
+    function filterDay(dayId) {
+      const panels = document.querySelectorAll('.day-panel');
+      const buttons = document.querySelectorAll('.day-tab-btn');
+
+      // 버튼 스타일 초기화
+      buttons.forEach(btn => {
+        btn.classList.remove('bg-slate-900', 'text-white', 'shadow-sm');
+        btn.classList.add('text-slate-700', 'hover:bg-white/70');
+      });
+
+      // 선택된 버튼 활성화
+      const activeBtn = document.getElementById('tab-' + dayId);
+      if (activeBtn) {
+        activeBtn.classList.remove('text-slate-700', 'hover:bg-white/70');
+        activeBtn.classList.add('bg-slate-900', 'text-white', 'shadow-sm');
+      }
+
+      // 패널 표시 제어
+      panels.forEach(panel => {
+        if (dayId === 'all' || panel.id === 'panel-' + dayId) {
+          panel.style.display = 'block';
+        } else {
+          panel.style.display = 'none';
+        }
+      });
+    }
+
+    // 2. 사전 예약 및 준비 체크리스트 데이터
+    const checklistItems = [
+      {
+        id: 'chk-tour',
+        badge: '필수 예약',
+        badgeColor: 'bg-rose-100 text-rose-700',
+        title: '2일차(11/20 금) 근교 일일 버스 투어 예약',
+        desc: '하코네 또는 가와구치코/가마쿠라 한국어·다국어 투어 사전 예약 (전날 신주쿠 집결 장소·시간 확인)'
+      },
+      {
+        id: 'chk-airport',
+        badge: '사전 예매 유리',
+        badgeColor: 'bg-sky-100 text-sky-700',
+        title: '공항 이동 티켓 예매 (스카이라이너 / WILLER 버스)',
+        desc: '스카이라이너 왕복/서브웨이 결합권(QR 발권) 또는 WILLER 저가 버스 24시간 전 조기 예약(1,900엔)'
+      },
+      {
+        id: 'chk-vjw',
+        badge: '출국 6시간 전',
+        badgeColor: 'bg-amber-100 text-amber-800',
+        title: 'Visit Japan Web 등록 및 입국·세관 QR코드 저장',
+        desc: '어른 2명 + 학생 1명 전원 정보 등록 후 오프라인에서도 볼 수 있도록 스크린샷 저장'
+      },
+      {
+        id: 'chk-ic',
+        badge: '교통 준비',
+        badgeColor: 'bg-emerald-100 text-emerald-700',
+        title: '교통카드 준비 (아이폰 애플월렛 Suica/PASMO 발급)',
+        desc: '아이폰은 한국에서 미리 발급·충전, 안드로이드 사용자는 나리타공항 도착 후 웰컴 스이카 구매'
+      },
+      {
+        id: 'chk-money',
+        badge: '결제 & 환전',
+        badgeColor: 'bg-indigo-100 text-indigo-700',
+        title: '트래블로그 카드 충전 + 엔화 현금 15,000~20,000엔 준비',
+        desc: '식권 자판기, 길거리 간식, 100엔 가챠, 실물 교통카드 충전용 현금 및 100엔 동전 확보'
+      },
+      {
+        id: 'chk-event',
+        badge: '출발 2~3주 전',
+        badgeColor: 'bg-purple-100 text-purple-700',
+        title: '원신 · 프로세카 · 밀그램 기간 한정 팝업/콜라보 카페 확인',
+        desc: '공식 X(@Genshin_7, @pj_sekai, @MILGRAM_info) 확인 및 필요 시 사전 정리권/추첨 응모'
+      },
+      {
+        id: 'chk-food',
+        badge: '맛집 팁',
+        badgeColor: 'bg-slate-200 text-slate-700',
+        title: '인기 식당 웨이팅 전략 숙지 및 이자카야 예약 검토',
+        desc: '모토무라 규카츠(11시 오픈런), 무테키야·츠지한 피크타임 회피 / 저녁 이자카야 필요 시 구글·타베로그 예약'
+      },
+      {
+        id: 'chk-weather',
+        badge: '짐 싸기',
+        badgeColor: 'bg-teal-100 text-teal-800',
+        title: '11월 중순 도쿄 & 근교(하코네/후지산) 방한 복장 준비',
+        desc: '도쿄 도심은 선선한 가을 날씨이나, 2일차 근교 산간 지역은 기온이 낮으므로 경량 패딩·가디건 지참'
+      }
+    ];
+
+    const STORAGE_KEY = 'tokyo_2026_family_checklist';
+
+    function loadChecklistState() {
+      try {
+        const saved = localStorage.getItem(STORAGE_KEY);
+        return saved ? JSON.parse(saved) : {};
+      } catch (e) {
+        return {};
+      }
+    }
+
+    function saveChecklistState(state) {
+      try {
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
+      } catch (e) {
+        // localStorage 제한 환경 무시
+      }
+    }
+
+    function renderChecklist() {
+      const container = document.getElementById('checklist-container');
+      const state = loadChecklistState();
+      container.innerHTML = '';
+
+      let completedCount = 0;
+
+      checklistItems.forEach(item => {
+        const isChecked = !!state[item.id];
+        if (isChecked) completedCount++;
+
+        const row = document.createElement('label');
+        row.className = `flex items-start gap-3.5 p-3.5 rounded-2xl border cursor-pointer transition ${
+          isChecked ? 'bg-slate-50 border-slate-200' : 'bg-white border-slate-200 hover:border-indigo-300'
+        }`;
+
+        row.innerHTML = `
+          <input type="checkbox" class="mt-1 w-5 h-5 rounded border-slate-300 text-indigo-600 focus:ring-indigo-500 cursor-pointer"
+            ${isChecked ? 'checked' : ''} onchange="toggleCheckItem('${item.id}')" />
+          <div class="flex-1">
+            <div class="flex flex-wrap items-center gap-2 mb-1">
+              <span class="text-[11px] font-bold px-2 py-0.5 rounded ${item.badgeColor}">${item.badge}</span>
+              <span class="font-bold text-sm text-slate-900 ${isChecked ? 'check-done' : ''}">${item.title}</span>
+            </div>
+            <p class="text-xs text-slate-600 leading-relaxed ${isChecked ? 'check-done' : ''}">${item.desc}</p>
+          </div>
+        `;
+        container.appendChild(row);
+      });
+
+      const progressText = document.getElementById('progress-text');
+      if (progressText) {
+        progressText.textContent = `완료: ${completedCount} / ${checklistItems.length}`;
+      }
+    }
+
+    function toggleCheckItem(id) {
+      const state = loadChecklistState();
+      state[id] = !state[id];
+      saveChecklistState(state);
+      renderChecklist();
+    }
+
+    function resetChecklist() {
+      saveChecklistState({});
+      renderChecklist();
+    }
+
+    // 3. 여행 준비물 체크리스트 데이터 (섹션 5)
+    const packingCategories = {
+      basic: [
+        { id: 'pkg-passport', title: '여권 (유효기간 6개월 이상 권장)', desc: '가족 전원 여권 및 여권 사본/사진 휴대폰 저장' },
+        { id: 'pkg-vjw', title: 'Visit Japan Web QR코드 캡처본', desc: '입국심사·세관신고 QR코드 오프라인 이미지 저장' },
+        { id: 'pkg-voucher', title: '항공권 E-티켓 · 숙소 · 투어 바우처', desc: '호텔 예약확정서 및 하코네/근교 투어 바우처' },
+        { id: 'pkg-money', title: '트래블로그 카드 & 엔화 현금', desc: '실물 카드 + 비상 현금(1.5~2만엔) + 100엔 동전' },
+        { id: 'pkg-sim', title: '스마트폰 & 유심/eSIM 또는 로밍', desc: '현지 지도·번역·네이버페이 사용을 위한 데이터 개통' },
+        { id: 'pkg-adapter', title: '110V 돼지코 어댑터 (멀티탭 권장)', desc: '일본 110V 11자형 어댑터 2~3개 및 충전 케이블' }
+      ],
+      general: [
+        { id: 'pkg-powerbank', title: '보조배터리 (반드시 기내 가방 수납)', desc: '지도 검색·사진 촬영·QR 결제용 대용량 1~2개' },
+        { id: 'pkg-meds', title: '상비약 & 휴족시간(쿨링 파스)', desc: '소화제, 진통제, 감기약, 밴드, 1.5만 보 도보 대비 파스' },
+        { id: 'pkg-shoes', title: '발 편한 운동화', desc: '하루 15,000~20,000보 이상 걷는 일정 대비 필수' },
+        { id: 'pkg-clothes', title: '11월 중순 일교차 대비 겉옷', desc: '얇은 긴팔 겹쳐입기 + 경량 패딩/가디건/머플러' },
+        { id: 'pkg-coin', title: '동전 지갑 & 접이식 장바구니', desc: '가챠·자판기용 동전 지갑 + 편의점/쇼핑용 에코백' },
+        { id: 'pkg-tissue', title: '휴대용 물티슈 & 손수건', desc: '일본 공중화장실 핸드타월 미비 대비 개인 위생용' }
+      ],
+      custom: [
+        { id: 'pkg-goods', title: '굿즈 보호 파우치 · 클리어파일 · 지퍼백', desc: '아크릴 스탠드·포토카드·종이 특전 구김 및 파손 방지' },
+        { id: 'pkg-pen', title: '필기구 (유성매직 / 볼펜)', desc: '지퍼백 라벨링 및 입국 서류·메모 작성용' },
+        { id: 'pkg-boston', title: '여분 접이식 보스턴백 & 뽁뽁이', desc: '이케부쿠로 굿즈 및 돈키호테 기념품 부피 증가 대비' },
+        { id: 'pkg-personal', title: '개인 화장품 · 렌즈/안경 · 처방약', desc: '세면도구, 스킨케어(기내 반입 시 100ml 이하), 상비 처방약' },
+        { id: 'pkg-umbrella', title: '가벼운 접이식 우산', desc: '11월 도쿄 및 산간 근교 갑작스러운 비 대비' }
+      ]
+    };
+
+    const PACKING_STORAGE_KEY = 'tokyo_2026_family_packing';
+
+    function loadPackingState() {
+      try {
+        const saved = localStorage.getItem(PACKING_STORAGE_KEY);
+        return saved ? JSON.parse(saved) : {};
+      } catch (e) {
+        return {};
+      }
+    }
+
+    function savePackingState(state) {
+      try {
+        localStorage.setItem(PACKING_STORAGE_KEY, JSON.stringify(state));
+      } catch (e) {
+        // localStorage 제한 환경 무시
+      }
+    }
+
+    function renderPackingCategory(containerId, items, state) {
+      const container = document.getElementById(containerId);
+      if (!container) return 0;
+      container.innerHTML = '';
+      let done = 0;
+
+      items.forEach(item => {
+        const isChecked = !!state[item.id];
+        if (isChecked) done++;
+
+        const label = document.createElement('label');
+        label.className = `flex items-start gap-2.5 p-3 rounded-2xl border cursor-pointer transition ${
+          isChecked ? 'bg-slate-50 border-slate-200' : 'bg-white border-slate-200 hover:border-teal-300'
+        }`;
+
+        label.innerHTML = `
+          <input type="checkbox" class="mt-0.5 w-4 h-4 rounded border-slate-300 text-teal-600 focus:ring-teal-500 cursor-pointer"
+            ${isChecked ? 'checked' : ''} onchange="togglePackingItem('${item.id}')" />
+          <div class="flex-1">
+            <div class="font-bold text-xs sm:text-sm text-slate-900 ${isChecked ? 'check-done' : ''}">${item.title}</div>
+            <p class="text-[11px] sm:text-xs text-slate-500 mt-0.5 leading-snug ${isChecked ? 'check-done' : ''}">${item.desc}</p>
+          </div>
+        `;
+        container.appendChild(label);
+      });
+
+      return done;
+    }
+
+    function renderAllPacking() {
+      const state = loadPackingState();
+      const doneBasic = renderPackingCategory('packing-basic-container', packingCategories.basic, state);
+      const doneGeneral = renderPackingCategory('packing-general-container', packingCategories.general, state);
+      const doneCustom = renderPackingCategory('packing-custom-container', packingCategories.custom, state);
+
+      const totalDone = doneBasic + doneGeneral + doneCustom;
+      const totalItems = packingCategories.basic.length + packingCategories.general.length + packingCategories.custom.length;
+
+      const progressEl = document.getElementById('packing-progress-text');
+      if (progressEl) {
+        progressEl.textContent = `준비 완료: ${totalDone} / ${totalItems}`;
+      }
+    }
+
+    function togglePackingItem(id) {
+      const state = loadPackingState();
+      state[id] = !state[id];
+      savePackingState(state);
+      renderAllPacking();
+    }
+
+    function resetPackingChecklist() {
+      savePackingState({});
+      renderAllPacking();
+    }
+
+    // 페이지 로드 시 체크리스트 초기화
+    document.addEventListener('DOMContentLoaded', () => {
+      renderChecklist();
+      renderAllPacking();
+    });
+  </script>
+</body>
+</html>
